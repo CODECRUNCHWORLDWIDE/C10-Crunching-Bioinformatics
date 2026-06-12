@@ -287,5 +287,5 @@ When done:
 - [ENA FASTQ download](https://www.ebi.ac.uk/ena/browser/view/ERR1019034) — direct gzipped FASTQ URLs.
 - [FastQC docs](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/) — read each module before interpreting.
 - [seqkit](https://bioinf.shenwei.me/seqkit/) — for `head`, `stats`, sanity checks.
-- The C10 [`branding/BRAND.md`](../../../branding/BRAND.md) — voice and receipt format.
+- The C10 [`assets/branding/BRAND.md`](../../../assets/branding/BRAND.md) — voice and receipt format.
 - [`resources.md`](../resources.md) — full week resource list.

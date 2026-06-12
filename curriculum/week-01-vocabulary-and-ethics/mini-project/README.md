@@ -176,5 +176,5 @@ When done:
 ## Resources
 
 - The reference quality bar: a senior bioinformatician's portfolio (search GitHub for `bioinformatics portfolio site:github.com` and skim a few — note what the polished ones look like).
-- The C10 [`branding/BRAND.md`](../../../branding/BRAND.md) — the voice and layout you are matching.
+- The C10 [`assets/branding/BRAND.md`](../../../assets/branding/BRAND.md) — the voice and layout you are matching.
 - [resources.md](../resources.md) — every source you might cite.

@@ -189,13 +189,13 @@ Notice:
 - **Every dataset has a version or accession.**
 - **Every method has a citation.**
 
-This is not optional in a real paper. It is also the practice we adopt in C10 from Week 1. The [`reproducibility receipt`](../../../branding/BRAND.md) box in every mini-project enforces this — five rows, always, including wall time.
+This is not optional in a real paper. It is also the practice we adopt in C10 from Week 1. The [`reproducibility receipt`](../../../assets/branding/BRAND.md) box in every mini-project enforces this — five rows, always, including wall time.
 
 ---
 
 ## 7. Language — the things you do not say
 
-The voice of C10 (see `branding/BRAND.md`) is lab-notebook precise. A specific subset of that voice is about **how we talk about genetics**.
+The voice of C10 (see `assets/branding/BRAND.md`) is lab-notebook precise. A specific subset of that voice is about **how we talk about genetics**.
 
 ### Things to avoid
 

@@ -285,5 +285,5 @@ When done:
 - [Bio.Align.PairwiseAligner docs](https://biopython.org/docs/latest/api/Bio.Align.html#Bio.Align.PairwiseAligner) — the verification path.
 - [Smith & Waterman 1981 paper](https://www.cs.umd.edu/class/spring2003/cmsc838t/papers/SmithWaterman1981.pdf) — four pages, free PDF.
 - [Gotoh 1982 affine-gap algorithm](https://www.cs.cmu.edu/~ckingsf/bioinfo-lectures/gaps.pdf) — lecture notes citing the original.
-- The C10 [`branding/BRAND.md`](../../../branding/BRAND.md) — voice and receipt format.
+- The C10 [`assets/branding/BRAND.md`](../../../assets/branding/BRAND.md) — voice and receipt format.
 - [`resources.md`](../resources.md) — full week resource list.
