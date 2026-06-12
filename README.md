@@ -4,7 +4,7 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
 [![Python · Biopython · R](https://img.shields.io/badge/stack-Python_·_Biopython_·_R-15803D.svg)](#stack)
-[![Built in the open](https://img.shields.io/badge/built-in%20the%20open-15803D.svg)](https://github.com/CODE-CRUNCH-CLUB)
+[![Built in the open](https://img.shields.io/badge/built-in%20the%20open-15803D.svg)](https://github.com/CODECRUNCHWORLDWIDE)
 
 C10 sits at the rare intersection where Python, statistics, and biology meet. The bioinformatics field is structurally **open-source-first** (NCBI, Ensembl, EBI, Bioconductor are all free), which is why a Code Crunch track on it is feasible and why we treat reproducibility — pinned environments, public datasets, deterministic pipelines — as non-negotiable.
 

@@ -99,7 +99,7 @@ These are drafts. The next phases are where you *polish them into the actual del
 
 Your `README.md` at repo root should:
 
-- Open with a one-sentence description: "*My C10 bioinformatics portfolio. Tracks weeks 1–12 of the [Code Crunch Crunching Bioinformatics track](https://github.com/CODE-CRUNCH-CLUB/C10-Crunching-Bioinformatics).*"
+- Open with a one-sentence description: "*My C10 bioinformatics portfolio. Tracks weeks 1–12 of the [Code Crunch Crunching Bioinformatics track](https://github.com/CODECRUNCHWORLDWIDE/C10-Crunching-Bioinformatics).*"
 - Have a "Layout" section showing the directory tree.
 - Have a "Week 1" section with a one-paragraph summary plus links to the glossary and inventory.
 - Have a "How to read this repo" section: link order for a stranger arriving at it.
