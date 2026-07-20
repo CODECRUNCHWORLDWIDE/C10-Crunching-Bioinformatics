@@ -1,549 +1,262 @@
 {
   "repo": "C10-Crunching-Bioinformatics",
+  "updated": "2026-06-11T14:22:51-05:00",
   "files": [
-    {
-      "path": "00-overview.md",
-      "title": "C10 \u00b7 Crunching Bioinformatics"
-    },
-    {
-      "path": "CODE_OF_CONDUCT.md",
-      "title": "Contributor Covenant Code of Conduct"
-    },
-    {
-      "path": "CONTRIBUTING.md",
-      "title": "Contributing to Crunching Bioinformatics"
-    },
-    {
-      "path": "assets/branding/BRAND.md",
-      "title": "C10 \u00b7 Crunching Bioinformatics \u2014 Brand Guide"
-    },
-    {
-      "path": "curriculum/SYLLABUS.md",
-      "title": "C10 \u00b7 Crunching Bioinformatics \u2014 Syllabus"
-    },
-    {
-      "path": "curriculum/week-01-vocabulary-and-ethics/00-overview.md",
-      "title": "Week 1 \u2014 Vocabulary and Ethics"
-    },
-    {
-      "path": "curriculum/week-01-vocabulary-and-ethics/01-resources.md",
-      "title": "Week 1 \u2014 Resources"
-    },
-    {
-      "path": "curriculum/week-01-vocabulary-and-ethics/02-lecture-notes/01-the-central-dogma-in-90-minutes.md",
-      "title": "Lecture 1 \u2014 The Central Dogma in 90 Minutes"
-    },
-    {
-      "path": "curriculum/week-01-vocabulary-and-ethics/02-lecture-notes/02-data-ethics-and-public-data-sources.md",
-      "title": "Lecture 2 \u2014 Data Ethics and Public Data Sources"
-    },
-    {
-      "path": "curriculum/week-01-vocabulary-and-ethics/03-exercises/00-overview.md",
-      "title": "Week 1 \u2014 Exercises"
-    },
-    {
-      "path": "curriculum/week-01-vocabulary-and-ethics/03-exercises/exercise-01-glossary.md",
-      "title": "Exercise 1 \u2014 Glossary in Your Own Words"
-    },
-    {
-      "path": "curriculum/week-01-vocabulary-and-ethics/03-exercises/exercise-03-data-inventory.md",
-      "title": "Exercise 3 \u2014 Public-Data Inventory"
-    },
-    {
-      "path": "curriculum/week-01-vocabulary-and-ethics/04-challenges/00-overview.md",
-      "title": "Week 1 \u2014 Challenges"
-    },
-    {
-      "path": "curriculum/week-01-vocabulary-and-ethics/05-quiz.md",
-      "title": "Week 1 \u2014 Quiz"
-    },
-    {
-      "path": "curriculum/week-01-vocabulary-and-ethics/06-homework.md",
-      "title": "Week 1 Homework"
-    },
-    {
-      "path": "curriculum/week-01-vocabulary-and-ethics/07-mini-project/00-overview.md",
-      "title": "Mini-Project \u2014 Personal Glossary and Public-Data Inventory"
-    },
-    {
-      "path": "curriculum/week-02-fasta-fastq-io/00-overview.md",
-      "title": "Week 2 \u2014 FASTA, FASTQ, and Biopython IO"
-    },
-    {
-      "path": "curriculum/week-02-fasta-fastq-io/01-resources.md",
-      "title": "Week 2 \u2014 Resources"
-    },
-    {
-      "path": "curriculum/week-02-fasta-fastq-io/02-lecture-notes/01-fasta-the-line-format.md",
-      "title": "Lecture 1 \u2014 FASTA: The Line Format That Won"
-    },
-    {
-      "path": "curriculum/week-02-fasta-fastq-io/02-lecture-notes/02-fastq-and-quality-scores.md",
-      "title": "Lecture 2 \u2014 FASTQ and Quality Scores"
-    },
-    {
-      "path": "curriculum/week-02-fasta-fastq-io/03-exercises/00-overview.md",
-      "title": "Week 2 \u2014 Exercises"
-    },
-    {
-      "path": "curriculum/week-02-fasta-fastq-io/04-challenges/00-overview.md",
-      "title": "Week 2 \u2014 Challenges"
-    },
-    {
-      "path": "curriculum/week-02-fasta-fastq-io/04-challenges/challenge-01-streaming-large-fasta.md",
-      "title": "Challenge 1 \u2014 Stream a Large FASTA"
-    },
-    {
-      "path": "curriculum/week-02-fasta-fastq-io/05-quiz.md",
-      "title": "Week 2 \u2014 Quiz"
-    },
-    {
-      "path": "curriculum/week-02-fasta-fastq-io/06-homework.md",
-      "title": "Week 2 Homework"
-    },
-    {
-      "path": "curriculum/week-02-fasta-fastq-io/07-mini-project/00-overview.md",
-      "title": "Mini-Project \u2014 QC Report on a 1000 Genomes Subset"
-    },
-    {
-      "path": "curriculum/week-03-pairwise-alignment/00-overview.md",
-      "title": "Week 3 \u2014 Pairwise Alignment"
-    },
-    {
-      "path": "curriculum/week-03-pairwise-alignment/01-resources.md",
-      "title": "Week 3 \u2014 Resources"
-    },
-    {
-      "path": "curriculum/week-03-pairwise-alignment/02-lecture-notes/01-needleman-wunsch-and-smith-waterman-by-hand.md",
-      "title": "Lecture 1 \u2014 Needleman-Wunsch and Smith-Waterman, by Hand"
-    },
-    {
-      "path": "curriculum/week-03-pairwise-alignment/02-lecture-notes/02-substitution-matrices-and-gap-penalties.md",
-      "title": "Lecture 2 \u2014 Substitution Matrices and Gap Penalties"
-    },
-    {
-      "path": "curriculum/week-03-pairwise-alignment/03-exercises/00-overview.md",
-      "title": "Week 3 \u2014 Exercises"
-    },
-    {
-      "path": "curriculum/week-03-pairwise-alignment/04-challenges/00-overview.md",
-      "title": "Week 3 \u2014 Challenges"
-    },
-    {
-      "path": "curriculum/week-03-pairwise-alignment/04-challenges/challenge-01-affine-gap-penalty.md",
-      "title": "Challenge 1 \u2014 Affine Gap Penalty (Gotoh 1982)"
-    },
-    {
-      "path": "curriculum/week-03-pairwise-alignment/05-quiz.md",
-      "title": "Week 3 \u2014 Quiz"
-    },
-    {
-      "path": "curriculum/week-03-pairwise-alignment/06-homework.md",
-      "title": "Week 3 Homework"
-    },
-    {
-      "path": "curriculum/week-03-pairwise-alignment/07-mini-project/00-overview.md",
-      "title": "Mini-Project \u2014 Pure-NumPy Smith-Waterman Benchmarked vs Biopython"
-    },
-    {
-      "path": "curriculum/week-04-blast-and-taxonomy/00-overview.md",
-      "title": "Week 4 \u2014 BLAST and Taxonomy"
-    },
-    {
-      "path": "curriculum/week-04-blast-and-taxonomy/01-resources.md",
-      "title": "Week 4 \u2014 Resources"
-    },
-    {
-      "path": "curriculum/week-04-blast-and-taxonomy/02-lecture-notes/01-how-blast-actually-works.md",
-      "title": "Lecture 1 \u2014 How BLAST Actually Works"
-    },
-    {
-      "path": "curriculum/week-04-blast-and-taxonomy/02-lecture-notes/02-running-blast-locally-and-via-ncbi.md",
-      "title": "Lecture 2 \u2014 Running BLAST Locally and via NCBI"
-    },
-    {
-      "path": "curriculum/week-04-blast-and-taxonomy/03-exercises/00-overview.md",
-      "title": "Week 4 \u2014 Exercises"
-    },
-    {
-      "path": "curriculum/week-04-blast-and-taxonomy/04-challenges/00-overview.md",
-      "title": "Week 4 \u2014 Challenges"
-    },
-    {
-      "path": "curriculum/week-04-blast-and-taxonomy/04-challenges/challenge-01-taxonomy-classifier.md",
-      "title": "Challenge 1 \u2014 Taxonomy Classifier"
-    },
-    {
-      "path": "curriculum/week-04-blast-and-taxonomy/05-quiz.md",
-      "title": "Week 4 \u2014 Quiz"
-    },
-    {
-      "path": "curriculum/week-04-blast-and-taxonomy/06-homework.md",
-      "title": "Week 4 Homework"
-    },
-    {
-      "path": "curriculum/week-04-blast-and-taxonomy/07-mini-project/00-overview.md",
-      "title": "Mini-Project \u2014 BLAST-Driven Taxonomy Classifier for 20 Unknown Sequences"
-    },
-    {
-      "path": "curriculum/week-05-read-alignment/00-overview.md",
-      "title": "Week 5 \u2014 Read Alignment"
-    },
-    {
-      "path": "curriculum/week-05-read-alignment/01-resources.md",
-      "title": "Week 5 \u2014 Resources"
-    },
-    {
-      "path": "curriculum/week-05-read-alignment/02-lecture-notes/01-from-fastq-to-bam.md",
-      "title": "Lecture 1 \u2014 From FASTQ to BAM"
-    },
-    {
-      "path": "curriculum/week-05-read-alignment/02-lecture-notes/02-sam-bam-format-and-samtools.md",
-      "title": "Lecture 2 \u2014 SAM/BAM Format and samtools"
-    },
-    {
-      "path": "curriculum/week-05-read-alignment/03-exercises/00-overview.md",
-      "title": "Week 5 \u2014 Exercises"
-    },
-    {
-      "path": "curriculum/week-05-read-alignment/04-challenges/00-overview.md",
-      "title": "Week 5 \u2014 Challenges"
-    },
-    {
-      "path": "curriculum/week-05-read-alignment/04-challenges/challenge-01-detect-duplicates.md",
-      "title": "Challenge 1 \u2014 Detect duplicates by hand"
-    },
-    {
-      "path": "curriculum/week-05-read-alignment/05-quiz.md",
-      "title": "Week 5 \u2014 Quiz"
-    },
-    {
-      "path": "curriculum/week-05-read-alignment/06-homework.md",
-      "title": "Week 5 Homework"
-    },
-    {
-      "path": "curriculum/week-05-read-alignment/07-mini-project/00-overview.md",
-      "title": "Mini-Project \u2014 Align a Public Small-Genome Dataset and Produce Coverage Plots"
-    },
-    {
-      "path": "curriculum/week-06-variant-calling/00-overview.md",
-      "title": "Week 6 \u2014 Variant Calling"
-    },
-    {
-      "path": "curriculum/week-06-variant-calling/01-resources.md",
-      "title": "Week 6 \u2014 Resources"
-    },
-    {
-      "path": "curriculum/week-06-variant-calling/02-lecture-notes/01-from-bam-to-vcf-bcftools.md",
-      "title": "Lecture 1 \u2014 From BAM to VCF with bcftools"
-    },
-    {
-      "path": "curriculum/week-06-variant-calling/02-lecture-notes/02-gatk-best-practices-and-hard-filters.md",
-      "title": "Lecture 2 \u2014 GATK Best Practices and Hard Filters"
-    },
-    {
-      "path": "curriculum/week-06-variant-calling/03-exercises/00-overview.md",
-      "title": "Week 6 \u2014 Exercises"
-    },
-    {
-      "path": "curriculum/week-06-variant-calling/04-challenges/00-overview.md",
-      "title": "Week 6 \u2014 Challenges"
-    },
-    {
-      "path": "curriculum/week-06-variant-calling/04-challenges/challenge-01-compare-callers.md",
-      "title": "Challenge 1 \u2014 Compare bcftools and GATK on the same BAM"
-    },
-    {
-      "path": "curriculum/week-06-variant-calling/05-quiz.md",
-      "title": "Week 6 \u2014 Quiz"
-    },
-    {
-      "path": "curriculum/week-06-variant-calling/06-homework.md",
-      "title": "Week 6 Homework"
-    },
-    {
-      "path": "curriculum/week-06-variant-calling/07-mini-project/00-overview.md",
-      "title": "Mini-Project \u2014 Variant Call on a Public Small-Genome Dataset"
-    },
-    {
-      "path": "curriculum/week-07-transcriptomics-and-rna-seq/00-overview.md",
-      "title": "Week 7 \u2014 Transcriptomics and RNA-seq"
-    },
-    {
-      "path": "curriculum/week-07-transcriptomics-and-rna-seq/01-resources.md",
-      "title": "Week 7 \u2014 Resources"
-    },
-    {
-      "path": "curriculum/week-07-transcriptomics-and-rna-seq/02-lecture-notes/01-from-reads-to-transcripts.md",
-      "title": "Lecture 1 \u2014 From Reads to Transcripts"
-    },
-    {
-      "path": "curriculum/week-07-transcriptomics-and-rna-seq/02-lecture-notes/02-alignment-vs-pseudoalignment.md",
-      "title": "Lecture 2 \u2014 Alignment vs Pseudoalignment"
-    },
-    {
-      "path": "curriculum/week-07-transcriptomics-and-rna-seq/02-lecture-notes/03-counting-and-normalization-tpm-cpm.md",
-      "title": "Lecture 3 \u2014 Counting and Normalization (TPM, CPM)"
-    },
-    {
-      "path": "curriculum/week-07-transcriptomics-and-rna-seq/03-exercises/SOLUTIONS.md",
-      "title": "Exercise Solutions \u2014 Week 7"
-    },
-    {
-      "path": "curriculum/week-07-transcriptomics-and-rna-seq/03-exercises/exercise-01-trim-with-fastp.md",
-      "title": "Exercise 1 \u2014 Trim a paired-end RNA-seq FASTQ with fastp"
-    },
-    {
-      "path": "curriculum/week-07-transcriptomics-and-rna-seq/03-exercises/exercise-02-pseudoalign-with-kallisto.md",
-      "title": "Exercise 2 \u2014 Pseudoalign a yeast RNA-seq sample with kallisto"
-    },
-    {
-      "path": "curriculum/week-07-transcriptomics-and-rna-seq/04-challenges/challenge-01-build-a-mini-pipeline-with-snakemake.md",
-      "title": "Challenge 1 \u2014 Build a mini-pipeline with Snakemake"
-    },
-    {
-      "path": "curriculum/week-07-transcriptomics-and-rna-seq/04-challenges/challenge-02-compare-tools-on-same-sample.md",
-      "title": "Challenge 2 \u2014 Compare quantifiers on the same sample"
-    },
-    {
-      "path": "curriculum/week-07-transcriptomics-and-rna-seq/05-quiz.md",
-      "title": "Week 7 \u2014 Quiz"
-    },
-    {
-      "path": "curriculum/week-07-transcriptomics-and-rna-seq/06-homework.md",
-      "title": "Week 7 Homework"
-    },
-    {
-      "path": "curriculum/week-07-transcriptomics-and-rna-seq/07-mini-project/00-overview.md",
-      "title": "Mini-Project \u2014 Yeast RNA-seq counts matrix and PCA"
-    },
-    {
-      "path": "curriculum/week-08-variant-annotation-and-interpretation/00-overview.md",
-      "title": "Week 8 \u2014 Variant Annotation and Interpretation"
-    },
-    {
-      "path": "curriculum/week-08-variant-annotation-and-interpretation/01-resources.md",
-      "title": "Week 8 \u2014 Resources"
-    },
-    {
-      "path": "curriculum/week-08-variant-annotation-and-interpretation/02-lecture-notes/01-the-three-axes-of-variant-interpretation.md",
-      "title": "Lecture 1 \u2014 The Three Axes of Variant Interpretation"
-    },
-    {
-      "path": "curriculum/week-08-variant-annotation-and-interpretation/02-lecture-notes/02-population-and-clinical-databases.md",
-      "title": "Lecture 2 \u2014 Population and Clinical Databases"
-    },
-    {
-      "path": "curriculum/week-08-variant-annotation-and-interpretation/02-lecture-notes/03-acmg-classification-and-pharmacogenomics.md",
-      "title": "Lecture 3 \u2014 ACMG Classification and Pharmacogenomics"
-    },
-    {
-      "path": "curriculum/week-08-variant-annotation-and-interpretation/03-exercises/SOLUTIONS.md",
-      "title": "Exercise Solutions \u2014 Week 8"
-    },
-    {
-      "path": "curriculum/week-08-variant-annotation-and-interpretation/03-exercises/exercise-01-annotate-with-vep.md",
-      "title": "Exercise 1 \u2014 Annotate a small VCF with VEP"
-    },
-    {
-      "path": "curriculum/week-08-variant-annotation-and-interpretation/04-challenges/challenge-01-implement-acmg-criteria.md",
-      "title": "Challenge 1 \u2014 Implement the mechanically computable ACMG criteria"
-    },
-    {
-      "path": "curriculum/week-08-variant-annotation-and-interpretation/04-challenges/challenge-02-pharmacogenomics-report.md",
-      "title": "Challenge 2 \u2014 Build a pharmacogenomics-style report"
-    },
-    {
-      "path": "curriculum/week-08-variant-annotation-and-interpretation/05-quiz.md",
-      "title": "Week 8 \u2014 Quiz"
-    },
-    {
-      "path": "curriculum/week-08-variant-annotation-and-interpretation/06-homework.md",
-      "title": "Week 8 Homework"
-    },
-    {
-      "path": "curriculum/week-08-variant-annotation-and-interpretation/07-mini-project/00-overview.md",
-      "title": "Mini-Project \u2014 End-to-end variant annotation and interpretation pipeline"
-    },
-    {
-      "path": "curriculum/week-09-phylogenetics-and-msa/00-overview.md",
-      "title": "Week 9 \u2014 Phylogenetics and Multiple Sequence Alignment"
-    },
-    {
-      "path": "curriculum/week-09-phylogenetics-and-msa/01-resources.md",
-      "title": "Week 9 \u2014 Resources"
-    },
-    {
-      "path": "curriculum/week-09-phylogenetics-and-msa/02-lecture-notes/01-msa-and-progressive-alignment.md",
-      "title": "Lecture 1 \u2014 Multiple Sequence Alignment and the Progressive Heuristic"
-    },
-    {
-      "path": "curriculum/week-09-phylogenetics-and-msa/02-lecture-notes/02-distance-models-and-tree-building.md",
-      "title": "Lecture 2 \u2014 Distance Models, Neighbor-Joining, and Maximum Likelihood"
-    },
-    {
-      "path": "curriculum/week-09-phylogenetics-and-msa/02-lecture-notes/03-newick-nexus-and-rendering.md",
-      "title": "Lecture 3 \u2014 Newick, Nexus, and Tree Rendering"
-    },
-    {
-      "path": "curriculum/week-09-phylogenetics-and-msa/03-exercises/SOLUTIONS.md",
-      "title": "Week 9 \u2014 Exercise Solutions"
-    },
-    {
-      "path": "curriculum/week-09-phylogenetics-and-msa/04-challenges/challenge-01-iqtree-ml-with-bootstrap.md",
-      "title": "Challenge 1 \u2014 Maximum-likelihood tree with IQ-TREE 2 and ultrafast bootstrap"
-    },
-    {
-      "path": "curriculum/week-09-phylogenetics-and-msa/04-challenges/challenge-02-newick-nexus-roundtrip.md",
-      "title": "Challenge 2 \u2014 Newick and Nexus round-trip with topology preservation"
-    },
-    {
-      "path": "curriculum/week-09-phylogenetics-and-msa/05-quiz.md",
-      "title": "Week 9 \u2014 Quiz"
-    },
-    {
-      "path": "curriculum/week-09-phylogenetics-and-msa/06-homework.md",
-      "title": "Week 9 Homework"
-    },
-    {
-      "path": "curriculum/week-09-phylogenetics-and-msa/07-mini-project/00-overview.md",
-      "title": "Mini-Project \u2014 End-to-end phylogenetics pipeline"
-    },
-    {
-      "path": "curriculum/week-10-long-read-sequencing-and-assembly/00-overview.md",
-      "title": "Week 10 \u2014 Long-Read Sequencing and De Novo Assembly"
-    },
-    {
-      "path": "curriculum/week-10-long-read-sequencing-and-assembly/01-resources.md",
-      "title": "Week 10 \u2014 Resources"
-    },
-    {
-      "path": "curriculum/week-10-long-read-sequencing-and-assembly/02-lecture-notes/01-long-reads-and-basecalling.md",
-      "title": "Lecture 1 \u2014 Long-Read Sequencing and Basecalling"
-    },
-    {
-      "path": "curriculum/week-10-long-read-sequencing-and-assembly/02-lecture-notes/02-de-novo-assembly-olc.md",
-      "title": "Lecture 2 \u2014 De Novo Assembly and the OLC Graph"
-    },
-    {
-      "path": "curriculum/week-10-long-read-sequencing-and-assembly/02-lecture-notes/03-polishing-and-qc.md",
-      "title": "Lecture 3 \u2014 Polishing and Assembly QC"
-    },
-    {
-      "path": "curriculum/week-10-long-read-sequencing-and-assembly/03-exercises/SOLUTIONS.md",
-      "title": "Week 10 \u2014 Exercise Solutions"
-    },
-    {
-      "path": "curriculum/week-10-long-read-sequencing-and-assembly/04-challenges/challenge-01-hifiasm-on-hifi.md",
-      "title": "Challenge 1 \u2014 Hifiasm on simulated HiFi reads, no post-assembly polish"
-    },
-    {
-      "path": "curriculum/week-10-long-read-sequencing-and-assembly/04-challenges/challenge-02-bandage-graph-inspection.md",
-      "title": "Challenge 2 \u2014 Bandage graph inspection on a repeat-rich assembly"
-    },
-    {
-      "path": "curriculum/week-10-long-read-sequencing-and-assembly/05-quiz.md",
-      "title": "Week 10 \u2014 Quiz"
-    },
-    {
-      "path": "curriculum/week-10-long-read-sequencing-and-assembly/06-homework.md",
-      "title": "Week 10 Homework"
-    },
-    {
-      "path": "curriculum/week-10-long-read-sequencing-and-assembly/07-mini-project/00-overview.md",
-      "title": "Mini-Project \u2014 End-to-end long-read assembly pipeline"
-    },
-    {
-      "path": "curriculum/week-11-cancer-genomics/00-overview.md",
-      "title": "Week 11 \u2014 Cancer Genomics: Somatic vs Germline Analysis"
-    },
-    {
-      "path": "curriculum/week-11-cancer-genomics/01-resources.md",
-      "title": "Week 11 \u2014 Resources"
-    },
-    {
-      "path": "curriculum/week-11-cancer-genomics/02-lecture-notes/01-somatic-vs-germline-and-purity.md",
-      "title": "Lecture 1 \u2014 Somatic vs Germline: The Matched-Pair Model, Purity, Contamination, and CNV at the Concept Level"
-    },
-    {
-      "path": "curriculum/week-11-cancer-genomics/02-lecture-notes/02-mutect2-and-strelka2.md",
-      "title": "Lecture 2 \u2014 Mutect2 and Strelka2: The Callers, the Filters, and the Pipeline"
-    },
-    {
-      "path": "curriculum/week-11-cancer-genomics/02-lecture-notes/03-mutational-signatures-and-interpretation.md",
-      "title": "Lecture 3 \u2014 Mutational Signatures and the COSMIC / OncoKB / CIViC Interpretation Layer"
-    },
-    {
-      "path": "curriculum/week-11-cancer-genomics/03-exercises/SOLUTIONS.md",
-      "title": "Week 11 \u2014 Exercise Solutions"
-    },
-    {
-      "path": "curriculum/week-11-cancer-genomics/04-challenges/challenge-01-strelka2-cross-check.md",
-      "title": "Challenge 1 \u2014 Strelka2 Cross-Check on the Same BAM Pair"
-    },
-    {
-      "path": "curriculum/week-11-cancer-genomics/04-challenges/challenge-02-oncokb-civic-lookup.md",
-      "title": "Challenge 2 \u2014 Annotate PASS Variants with OncoKB and CIViC Evidence"
-    },
-    {
-      "path": "curriculum/week-11-cancer-genomics/05-quiz.md",
-      "title": "Week 11 \u2014 Quiz"
-    },
-    {
-      "path": "curriculum/week-11-cancer-genomics/06-homework.md",
-      "title": "Week 11 \u2014 Homework"
-    },
-    {
-      "path": "curriculum/week-11-cancer-genomics/07-mini-project/00-overview.md",
-      "title": "Mini-Project \u2014 End-to-End Somatic Variant Calling Pipeline with Mutational Signature Decomposition"
-    },
-    {
-      "path": "curriculum/week-12-capstone-end-to-end-pipeline/00-overview.md",
-      "title": "Week 12 \u2014 Capstone: End-to-End Reproducible Bioinformatics Pipeline"
-    },
-    {
-      "path": "curriculum/week-12-capstone-end-to-end-pipeline/01-resources.md",
-      "title": "Week 12 \u2014 Resources"
-    },
-    {
-      "path": "curriculum/week-12-capstone-end-to-end-pipeline/02-lecture-notes/01-reproducibility-and-pipeline-as-code.md",
-      "title": "Lecture 1 \u2014 The Reproducibility Crisis and Pipeline-as-Code"
-    },
-    {
-      "path": "curriculum/week-12-capstone-end-to-end-pipeline/02-lecture-notes/02-conda-bioconda-and-containers.md",
-      "title": "Lecture 2 \u2014 Conda, bioconda, and Containers"
-    },
-    {
-      "path": "curriculum/week-12-capstone-end-to-end-pipeline/02-lecture-notes/03-project-tracks-and-deposit.md",
-      "title": "Lecture 3 \u2014 Project Tracks, run-info.json, and the Deposit"
-    },
-    {
-      "path": "past-sessions/SPRING-2025/README-SPRING-2025.MD",
-      "title": "C10 Crunching Bioinformatics"
-    },
-    {
-      "path": "projects/capstone/00-overview.md",
-      "title": "Capstone Project \u2014 Master Guide"
-    },
-    {
-      "path": "resources/setup-guides/00-overview.md",
-      "title": "Setup Guides"
-    },
-    {
-      "path": "resources/setup-guides/browser.md",
-      "title": "Browser-Based Setup (No Install)"
-    },
-    {
-      "path": "resources/setup-guides/linux.md",
-      "title": "Linux Setup Guide"
-    },
-    {
-      "path": "resources/setup-guides/macos.md",
-      "title": "macOS Setup Guide"
-    },
-    {
-      "path": "resources/setup-guides/windows.md",
-      "title": "Windows Setup Guide"
-    }
+    {"path": "._README.md", "title": ". README"},
+    {"path": "._SYLLABUS.md", "title": ". SYLLABUS"},
+    {"path": "README.md", "title": "C10 · Crunching Bioinformatics"},
+    {"path": "SPRING-2025/._README-SPRING-2025.MD", "title": ". README SPRING 2025"},
+    {"path": "SPRING-2025/README-SPRING-2025.MD", "title": "C10 Crunching Bioinformatics"},
+    {"path": "SYLLABUS.md", "title": "C10 · Crunching Bioinformatics — Syllabus"},
+    {"path": "branding/._BRAND.md", "title": ". BRAND"},
+    {"path": "branding/BRAND.md", "title": "C10 · Crunching Bioinformatics — Brand Guide"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/._README.md", "title": ". README"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/._homework.md", "title": ". homework"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/._quiz.md", "title": ". quiz"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/._resources.md", "title": ". resources"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/README.md", "title": "Week 1 — Vocabulary and Ethics"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/challenges/._README.md", "title": ". README"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/challenges/README.md", "title": "Week 1 — Challenges"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/exercises/._README.md", "title": ". README"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/exercises/._exercise-01-glossary.md", "title": ". exercise 01 glossary"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/exercises/._exercise-03-data-inventory.md", "title": ". exercise 03 data inventory"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/exercises/README.md", "title": "Week 1 — Exercises"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/exercises/exercise-01-glossary.md", "title": "Exercise 1 — Glossary in Your Own Words"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/exercises/exercise-03-data-inventory.md", "title": "Exercise 3 — Public-Data Inventory"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/homework.md", "title": "Week 1 Homework"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/lecture-notes/._01-the-central-dogma-in-90-minutes.md", "title": ". 01 the central dogma in 90 minutes"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/lecture-notes/._02-data-ethics-and-public-data-sources.md", "title": ". 02 data ethics and public data sources"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/lecture-notes/01-the-central-dogma-in-90-minutes.md", "title": "Lecture 1 — The Central Dogma in 90 Minutes"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/lecture-notes/02-data-ethics-and-public-data-sources.md", "title": "Lecture 2 — Data Ethics and Public Data Sources"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/mini-project/._README.md", "title": ". README"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/mini-project/README.md", "title": "Mini-Project — Personal Glossary and Public-Data Inventory"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/quiz.md", "title": "Week 1 — Quiz"},
+    {"path": "curriculum/week-01-vocabulary-and-ethics/resources.md", "title": "Week 1 — Resources"},
+    {"path": "curriculum/week-02-fasta-fastq-io/._README.md", "title": ". README"},
+    {"path": "curriculum/week-02-fasta-fastq-io/._homework.md", "title": ". homework"},
+    {"path": "curriculum/week-02-fasta-fastq-io/._quiz.md", "title": ". quiz"},
+    {"path": "curriculum/week-02-fasta-fastq-io/._resources.md", "title": ". resources"},
+    {"path": "curriculum/week-02-fasta-fastq-io/README.md", "title": "Week 2 — FASTA, FASTQ, and Biopython IO"},
+    {"path": "curriculum/week-02-fasta-fastq-io/challenges/._README.md", "title": ". README"},
+    {"path": "curriculum/week-02-fasta-fastq-io/challenges/._challenge-01-streaming-large-fasta.md", "title": ". challenge 01 streaming large fasta"},
+    {"path": "curriculum/week-02-fasta-fastq-io/challenges/README.md", "title": "Week 2 — Challenges"},
+    {"path": "curriculum/week-02-fasta-fastq-io/challenges/challenge-01-streaming-large-fasta.md", "title": "Challenge 1 — Stream a Large FASTA"},
+    {"path": "curriculum/week-02-fasta-fastq-io/exercises/._README.md", "title": ". README"},
+    {"path": "curriculum/week-02-fasta-fastq-io/exercises/README.md", "title": "Week 2 — Exercises"},
+    {"path": "curriculum/week-02-fasta-fastq-io/homework.md", "title": "Week 2 Homework"},
+    {"path": "curriculum/week-02-fasta-fastq-io/lecture-notes/._01-fasta-the-line-format.md", "title": ". 01 fasta the line format"},
+    {"path": "curriculum/week-02-fasta-fastq-io/lecture-notes/._02-fastq-and-quality-scores.md", "title": ". 02 fastq and quality scores"},
+    {"path": "curriculum/week-02-fasta-fastq-io/lecture-notes/01-fasta-the-line-format.md", "title": "Lecture 1 — FASTA: The Line Format That Won"},
+    {"path": "curriculum/week-02-fasta-fastq-io/lecture-notes/02-fastq-and-quality-scores.md", "title": "Lecture 2 — FASTQ and Quality Scores"},
+    {"path": "curriculum/week-02-fasta-fastq-io/mini-project/._README.md", "title": ". README"},
+    {"path": "curriculum/week-02-fasta-fastq-io/mini-project/README.md", "title": "Mini-Project — QC Report on a 1000 Genomes Subset"},
+    {"path": "curriculum/week-02-fasta-fastq-io/quiz.md", "title": "Week 2 — Quiz"},
+    {"path": "curriculum/week-02-fasta-fastq-io/resources.md", "title": "Week 2 — Resources"},
+    {"path": "curriculum/week-03-pairwise-alignment/._README.md", "title": ". README"},
+    {"path": "curriculum/week-03-pairwise-alignment/._homework.md", "title": ". homework"},
+    {"path": "curriculum/week-03-pairwise-alignment/._quiz.md", "title": ". quiz"},
+    {"path": "curriculum/week-03-pairwise-alignment/._resources.md", "title": ". resources"},
+    {"path": "curriculum/week-03-pairwise-alignment/README.md", "title": "Week 3 — Pairwise Alignment"},
+    {"path": "curriculum/week-03-pairwise-alignment/challenges/._README.md", "title": ". README"},
+    {"path": "curriculum/week-03-pairwise-alignment/challenges/._challenge-01-affine-gap-penalty.md", "title": ". challenge 01 affine gap penalty"},
+    {"path": "curriculum/week-03-pairwise-alignment/challenges/README.md", "title": "Week 3 — Challenges"},
+    {"path": "curriculum/week-03-pairwise-alignment/challenges/challenge-01-affine-gap-penalty.md", "title": "Challenge 1 — Affine Gap Penalty (Gotoh 1982)"},
+    {"path": "curriculum/week-03-pairwise-alignment/exercises/._README.md", "title": ". README"},
+    {"path": "curriculum/week-03-pairwise-alignment/exercises/README.md", "title": "Week 3 — Exercises"},
+    {"path": "curriculum/week-03-pairwise-alignment/homework.md", "title": "Week 3 Homework"},
+    {"path": "curriculum/week-03-pairwise-alignment/lecture-notes/._01-needleman-wunsch-and-smith-waterman-by-hand.md", "title": ". 01 needleman wunsch and smith waterman by hand"},
+    {"path": "curriculum/week-03-pairwise-alignment/lecture-notes/._02-substitution-matrices-and-gap-penalties.md", "title": ". 02 substitution matrices and gap penalties"},
+    {"path": "curriculum/week-03-pairwise-alignment/lecture-notes/01-needleman-wunsch-and-smith-waterman-by-hand.md", "title": "Lecture 1 — Needleman-Wunsch and Smith-Waterman, by Hand"},
+    {"path": "curriculum/week-03-pairwise-alignment/lecture-notes/02-substitution-matrices-and-gap-penalties.md", "title": "Lecture 2 — Substitution Matrices and Gap Penalties"},
+    {"path": "curriculum/week-03-pairwise-alignment/mini-project/._README.md", "title": ". README"},
+    {"path": "curriculum/week-03-pairwise-alignment/mini-project/README.md", "title": "Mini-Project — Pure-NumPy Smith-Waterman Benchmarked vs Biopython"},
+    {"path": "curriculum/week-03-pairwise-alignment/quiz.md", "title": "Week 3 — Quiz"},
+    {"path": "curriculum/week-03-pairwise-alignment/resources.md", "title": "Week 3 — Resources"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/._README.md", "title": ". README"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/._homework.md", "title": ". homework"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/._quiz.md", "title": ". quiz"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/._resources.md", "title": ". resources"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/README.md", "title": "Week 4 — BLAST and Taxonomy"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/challenges/._README.md", "title": ". README"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/challenges/._challenge-01-taxonomy-classifier.md", "title": ". challenge 01 taxonomy classifier"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/challenges/README.md", "title": "Week 4 — Challenges"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/challenges/challenge-01-taxonomy-classifier.md", "title": "Challenge 1 — Taxonomy Classifier"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/exercises/._README.md", "title": ". README"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/exercises/README.md", "title": "Week 4 — Exercises"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/homework.md", "title": "Week 4 Homework"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/lecture-notes/._01-how-blast-actually-works.md", "title": ". 01 how blast actually works"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/lecture-notes/._02-running-blast-locally-and-via-ncbi.md", "title": ". 02 running blast locally and via ncbi"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/lecture-notes/01-how-blast-actually-works.md", "title": "Lecture 1 — How BLAST Actually Works"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/lecture-notes/02-running-blast-locally-and-via-ncbi.md", "title": "Lecture 2 — Running BLAST Locally and via NCBI"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/mini-project/._README.md", "title": ". README"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/mini-project/README.md", "title": "Mini-Project — BLAST-Driven Taxonomy Classifier for 20 Unknown Sequences"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/quiz.md", "title": "Week 4 — Quiz"},
+    {"path": "curriculum/week-04-blast-and-taxonomy/resources.md", "title": "Week 4 — Resources"},
+    {"path": "curriculum/week-05-read-alignment/._README.md", "title": ". README"},
+    {"path": "curriculum/week-05-read-alignment/._homework.md", "title": ". homework"},
+    {"path": "curriculum/week-05-read-alignment/._quiz.md", "title": ". quiz"},
+    {"path": "curriculum/week-05-read-alignment/._resources.md", "title": ". resources"},
+    {"path": "curriculum/week-05-read-alignment/README.md", "title": "Week 5 — Read Alignment"},
+    {"path": "curriculum/week-05-read-alignment/challenges/._README.md", "title": ". README"},
+    {"path": "curriculum/week-05-read-alignment/challenges/._challenge-01-detect-duplicates.md", "title": ". challenge 01 detect duplicates"},
+    {"path": "curriculum/week-05-read-alignment/challenges/README.md", "title": "Week 5 — Challenges"},
+    {"path": "curriculum/week-05-read-alignment/challenges/challenge-01-detect-duplicates.md", "title": "Challenge 1 — Detect duplicates by hand"},
+    {"path": "curriculum/week-05-read-alignment/exercises/._README.md", "title": ". README"},
+    {"path": "curriculum/week-05-read-alignment/exercises/README.md", "title": "Week 5 — Exercises"},
+    {"path": "curriculum/week-05-read-alignment/homework.md", "title": "Week 5 Homework"},
+    {"path": "curriculum/week-05-read-alignment/lecture-notes/._01-from-fastq-to-bam.md", "title": ". 01 from fastq to bam"},
+    {"path": "curriculum/week-05-read-alignment/lecture-notes/._02-sam-bam-format-and-samtools.md", "title": ". 02 sam bam format and samtools"},
+    {"path": "curriculum/week-05-read-alignment/lecture-notes/01-from-fastq-to-bam.md", "title": "Lecture 1 — From FASTQ to BAM"},
+    {"path": "curriculum/week-05-read-alignment/lecture-notes/02-sam-bam-format-and-samtools.md", "title": "Lecture 2 — SAM/BAM Format and samtools"},
+    {"path": "curriculum/week-05-read-alignment/mini-project/._README.md", "title": ". README"},
+    {"path": "curriculum/week-05-read-alignment/mini-project/README.md", "title": "Mini-Project — Align a Public Small-Genome Dataset and Produce Coverage Plots"},
+    {"path": "curriculum/week-05-read-alignment/quiz.md", "title": "Week 5 — Quiz"},
+    {"path": "curriculum/week-05-read-alignment/resources.md", "title": "Week 5 — Resources"},
+    {"path": "curriculum/week-06-variant-calling/._README.md", "title": ". README"},
+    {"path": "curriculum/week-06-variant-calling/._homework.md", "title": ". homework"},
+    {"path": "curriculum/week-06-variant-calling/._quiz.md", "title": ". quiz"},
+    {"path": "curriculum/week-06-variant-calling/._resources.md", "title": ". resources"},
+    {"path": "curriculum/week-06-variant-calling/README.md", "title": "Week 6 — Variant Calling"},
+    {"path": "curriculum/week-06-variant-calling/challenges/._README.md", "title": ". README"},
+    {"path": "curriculum/week-06-variant-calling/challenges/._challenge-01-compare-callers.md", "title": ". challenge 01 compare callers"},
+    {"path": "curriculum/week-06-variant-calling/challenges/README.md", "title": "Week 6 — Challenges"},
+    {"path": "curriculum/week-06-variant-calling/challenges/challenge-01-compare-callers.md", "title": "Challenge 1 — Compare bcftools and GATK on the same BAM"},
+    {"path": "curriculum/week-06-variant-calling/exercises/._README.md", "title": ". README"},
+    {"path": "curriculum/week-06-variant-calling/exercises/README.md", "title": "Week 6 — Exercises"},
+    {"path": "curriculum/week-06-variant-calling/homework.md", "title": "Week 6 Homework"},
+    {"path": "curriculum/week-06-variant-calling/lecture-notes/._01-from-bam-to-vcf-bcftools.md", "title": ". 01 from bam to vcf bcftools"},
+    {"path": "curriculum/week-06-variant-calling/lecture-notes/._02-gatk-best-practices-and-hard-filters.md", "title": ". 02 gatk best practices and hard filters"},
+    {"path": "curriculum/week-06-variant-calling/lecture-notes/01-from-bam-to-vcf-bcftools.md", "title": "Lecture 1 — From BAM to VCF with bcftools"},
+    {"path": "curriculum/week-06-variant-calling/lecture-notes/02-gatk-best-practices-and-hard-filters.md", "title": "Lecture 2 — GATK Best Practices and Hard Filters"},
+    {"path": "curriculum/week-06-variant-calling/mini-project/._README.md", "title": ". README"},
+    {"path": "curriculum/week-06-variant-calling/mini-project/README.md", "title": "Mini-Project — Variant Call on a Public Small-Genome Dataset"},
+    {"path": "curriculum/week-06-variant-calling/quiz.md", "title": "Week 6 — Quiz"},
+    {"path": "curriculum/week-06-variant-calling/resources.md", "title": "Week 6 — Resources"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/._README.md", "title": ". README"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/._homework.md", "title": ". homework"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/._quiz.md", "title": ". quiz"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/._resources.md", "title": ". resources"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/README.md", "title": "Week 7 — Transcriptomics and RNA-seq"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/challenges/._challenge-01-build-a-mini-pipeline-with-snakemake.md", "title": ". challenge 01 build a mini pipeline with snakemake"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/challenges/._challenge-02-compare-tools-on-same-sample.md", "title": ". challenge 02 compare tools on same sample"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/challenges/challenge-01-build-a-mini-pipeline-with-snakemake.md", "title": "Challenge 1 — Build a mini-pipeline with Snakemake"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/challenges/challenge-02-compare-tools-on-same-sample.md", "title": "Challenge 2 — Compare quantifiers on the same sample"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/exercises/._SOLUTIONS.md", "title": ". SOLUTIONS"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/exercises/._exercise-01-trim-with-fastp.md", "title": ". exercise 01 trim with fastp"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/exercises/._exercise-02-pseudoalign-with-kallisto.md", "title": ". exercise 02 pseudoalign with kallisto"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/exercises/SOLUTIONS.md", "title": "Exercise Solutions — Week 7"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/exercises/exercise-01-trim-with-fastp.md", "title": "Exercise 1 — Trim a paired-end RNA-seq FASTQ with fastp"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/exercises/exercise-02-pseudoalign-with-kallisto.md", "title": "Exercise 2 — Pseudoalign a yeast RNA-seq sample with kallisto"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/homework.md", "title": "Week 7 Homework"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/lecture-notes/._01-from-reads-to-transcripts.md", "title": ". 01 from reads to transcripts"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/lecture-notes/._02-alignment-vs-pseudoalignment.md", "title": ". 02 alignment vs pseudoalignment"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/lecture-notes/._03-counting-and-normalization-tpm-cpm.md", "title": ". 03 counting and normalization tpm cpm"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/lecture-notes/01-from-reads-to-transcripts.md", "title": "Lecture 1 — From Reads to Transcripts"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/lecture-notes/02-alignment-vs-pseudoalignment.md", "title": "Lecture 2 — Alignment vs Pseudoalignment"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/lecture-notes/03-counting-and-normalization-tpm-cpm.md", "title": "Lecture 3 — Counting and Normalization (TPM, CPM)"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/mini-project/._README.md", "title": ". README"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/mini-project/README.md", "title": "Mini-Project — Yeast RNA-seq counts matrix and PCA"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/quiz.md", "title": "Week 7 — Quiz"},
+    {"path": "curriculum/week-07-transcriptomics-and-rna-seq/resources.md", "title": "Week 7 — Resources"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/._README.md", "title": ". README"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/._homework.md", "title": ". homework"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/._quiz.md", "title": ". quiz"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/._resources.md", "title": ". resources"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/README.md", "title": "Week 8 — Variant Annotation and Interpretation"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/challenges/._challenge-01-implement-acmg-criteria.md", "title": ". challenge 01 implement acmg criteria"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/challenges/._challenge-02-pharmacogenomics-report.md", "title": ". challenge 02 pharmacogenomics report"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/challenges/challenge-01-implement-acmg-criteria.md", "title": "Challenge 1 — Implement the mechanically computable ACMG criteria"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/challenges/challenge-02-pharmacogenomics-report.md", "title": "Challenge 2 — Build a pharmacogenomics-style report"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/exercises/._SOLUTIONS.md", "title": ". SOLUTIONS"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/exercises/._exercise-01-annotate-with-vep.md", "title": ". exercise 01 annotate with vep"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/exercises/SOLUTIONS.md", "title": "Exercise Solutions — Week 8"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/exercises/exercise-01-annotate-with-vep.md", "title": "Exercise 1 — Annotate a small VCF with VEP"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/homework.md", "title": "Week 8 Homework"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/lecture-notes/._01-the-three-axes-of-variant-interpretation.md", "title": ". 01 the three axes of variant interpretation"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/lecture-notes/._02-population-and-clinical-databases.md", "title": ". 02 population and clinical databases"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/lecture-notes/._03-acmg-classification-and-pharmacogenomics.md", "title": ". 03 acmg classification and pharmacogenomics"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/lecture-notes/01-the-three-axes-of-variant-interpretation.md", "title": "Lecture 1 — The Three Axes of Variant Interpretation"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/lecture-notes/02-population-and-clinical-databases.md", "title": "Lecture 2 — Population and Clinical Databases"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/lecture-notes/03-acmg-classification-and-pharmacogenomics.md", "title": "Lecture 3 — ACMG Classification and Pharmacogenomics"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/mini-project/._README.md", "title": ". README"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/mini-project/README.md", "title": "Mini-Project — End-to-end variant annotation and interpretation pipeline"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/quiz.md", "title": "Week 8 — Quiz"},
+    {"path": "curriculum/week-08-variant-annotation-and-interpretation/resources.md", "title": "Week 8 — Resources"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/._README.md", "title": ". README"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/._homework.md", "title": ". homework"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/._quiz.md", "title": ". quiz"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/._resources.md", "title": ". resources"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/README.md", "title": "Week 9 — Phylogenetics and Multiple Sequence Alignment"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/challenges/._challenge-01-iqtree-ml-with-bootstrap.md", "title": ". challenge 01 iqtree ml with bootstrap"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/challenges/._challenge-02-newick-nexus-roundtrip.md", "title": ". challenge 02 newick nexus roundtrip"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/challenges/challenge-01-iqtree-ml-with-bootstrap.md", "title": "Challenge 1 — Maximum-likelihood tree with IQ-TREE 2 and ultrafast bootstrap"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/challenges/challenge-02-newick-nexus-roundtrip.md", "title": "Challenge 2 — Newick and Nexus round-trip with topology preservation"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/exercises/._SOLUTIONS.md", "title": ". SOLUTIONS"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/exercises/SOLUTIONS.md", "title": "Week 9 — Exercise Solutions"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/homework.md", "title": "Week 9 Homework"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/lecture-notes/._01-msa-and-progressive-alignment.md", "title": ". 01 msa and progressive alignment"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/lecture-notes/._02-distance-models-and-tree-building.md", "title": ". 02 distance models and tree building"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/lecture-notes/._03-newick-nexus-and-rendering.md", "title": ". 03 newick nexus and rendering"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/lecture-notes/01-msa-and-progressive-alignment.md", "title": "Lecture 1 — Multiple Sequence Alignment and the Progressive Heuristic"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/lecture-notes/02-distance-models-and-tree-building.md", "title": "Lecture 2 — Distance Models, Neighbor-Joining, and Maximum Likelihood"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/lecture-notes/03-newick-nexus-and-rendering.md", "title": "Lecture 3 — Newick, Nexus, and Tree Rendering"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/mini-project/._README.md", "title": ". README"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/mini-project/README.md", "title": "Mini-Project — End-to-end phylogenetics pipeline"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/quiz.md", "title": "Week 9 — Quiz"},
+    {"path": "curriculum/week-09-phylogenetics-and-msa/resources.md", "title": "Week 9 — Resources"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/._README.md", "title": ". README"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/._homework.md", "title": ". homework"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/._quiz.md", "title": ". quiz"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/._resources.md", "title": ". resources"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/README.md", "title": "Week 10 — Long-Read Sequencing and De Novo Assembly"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/challenges/._challenge-01-hifiasm-on-hifi.md", "title": ". challenge 01 hifiasm on hifi"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/challenges/._challenge-02-bandage-graph-inspection.md", "title": ". challenge 02 bandage graph inspection"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/challenges/challenge-01-hifiasm-on-hifi.md", "title": "Challenge 1 — Hifiasm on simulated HiFi reads, no post-assembly polish"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/challenges/challenge-02-bandage-graph-inspection.md", "title": "Challenge 2 — Bandage graph inspection on a repeat-rich assembly"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/exercises/._SOLUTIONS.md", "title": ". SOLUTIONS"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/exercises/SOLUTIONS.md", "title": "Week 10 — Exercise Solutions"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/homework.md", "title": "Week 10 Homework"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/lecture-notes/._01-long-reads-and-basecalling.md", "title": ". 01 long reads and basecalling"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/lecture-notes/._02-de-novo-assembly-olc.md", "title": ". 02 de novo assembly olc"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/lecture-notes/._03-polishing-and-qc.md", "title": ". 03 polishing and qc"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/lecture-notes/01-long-reads-and-basecalling.md", "title": "Lecture 1 — Long-Read Sequencing and Basecalling"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/lecture-notes/02-de-novo-assembly-olc.md", "title": "Lecture 2 — De Novo Assembly and the OLC Graph"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/lecture-notes/03-polishing-and-qc.md", "title": "Lecture 3 — Polishing and Assembly QC"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/mini-project/._README.md", "title": ". README"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/mini-project/README.md", "title": "Mini-Project — End-to-end long-read assembly pipeline"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/quiz.md", "title": "Week 10 — Quiz"},
+    {"path": "curriculum/week-10-long-read-sequencing-and-assembly/resources.md", "title": "Week 10 — Resources"},
+    {"path": "curriculum/week-11-cancer-genomics/._README.md", "title": ". README"},
+    {"path": "curriculum/week-11-cancer-genomics/._homework.md", "title": ". homework"},
+    {"path": "curriculum/week-11-cancer-genomics/._quiz.md", "title": ". quiz"},
+    {"path": "curriculum/week-11-cancer-genomics/._resources.md", "title": ". resources"},
+    {"path": "curriculum/week-11-cancer-genomics/README.md", "title": "Week 11 — Cancer Genomics: Somatic vs Germline Analysis"},
+    {"path": "curriculum/week-11-cancer-genomics/challenges/._challenge-01-strelka2-cross-check.md", "title": ". challenge 01 strelka2 cross check"},
+    {"path": "curriculum/week-11-cancer-genomics/challenges/._challenge-02-oncokb-civic-lookup.md", "title": ". challenge 02 oncokb civic lookup"},
+    {"path": "curriculum/week-11-cancer-genomics/challenges/challenge-01-strelka2-cross-check.md", "title": "Challenge 1 — Strelka2 Cross-Check on the Same BAM Pair"},
+    {"path": "curriculum/week-11-cancer-genomics/challenges/challenge-02-oncokb-civic-lookup.md", "title": "Challenge 2 — Annotate PASS Variants with OncoKB and CIViC Evidence"},
+    {"path": "curriculum/week-11-cancer-genomics/exercises/._SOLUTIONS.md", "title": ". SOLUTIONS"},
+    {"path": "curriculum/week-11-cancer-genomics/exercises/SOLUTIONS.md", "title": "Week 11 — Exercise Solutions"},
+    {"path": "curriculum/week-11-cancer-genomics/homework.md", "title": "Week 11 — Homework"},
+    {"path": "curriculum/week-11-cancer-genomics/lecture-notes/._01-somatic-vs-germline-and-purity.md", "title": ". 01 somatic vs germline and purity"},
+    {"path": "curriculum/week-11-cancer-genomics/lecture-notes/._02-mutect2-and-strelka2.md", "title": ". 02 mutect2 and strelka2"},
+    {"path": "curriculum/week-11-cancer-genomics/lecture-notes/._03-mutational-signatures-and-interpretation.md", "title": ". 03 mutational signatures and interpretation"},
+    {"path": "curriculum/week-11-cancer-genomics/lecture-notes/01-somatic-vs-germline-and-purity.md", "title": "Lecture 1 — Somatic vs Germline: The Matched-Pair Model, Purity, Contamination, and CNV at the Concept Level"},
+    {"path": "curriculum/week-11-cancer-genomics/lecture-notes/02-mutect2-and-strelka2.md", "title": "Lecture 2 — Mutect2 and Strelka2: The Callers, the Filters, and the Pipeline"},
+    {"path": "curriculum/week-11-cancer-genomics/lecture-notes/03-mutational-signatures-and-interpretation.md", "title": "Lecture 3 — Mutational Signatures and the COSMIC / OncoKB / CIViC Interpretation Layer"},
+    {"path": "curriculum/week-11-cancer-genomics/mini-project/._README.md", "title": ". README"},
+    {"path": "curriculum/week-11-cancer-genomics/mini-project/README.md", "title": "Mini-Project — End-to-End Somatic Variant Calling Pipeline with Mutational Signature Decomposition"},
+    {"path": "curriculum/week-11-cancer-genomics/quiz.md", "title": "Week 11 — Quiz"},
+    {"path": "curriculum/week-11-cancer-genomics/resources.md", "title": "Week 11 — Resources"},
+    {"path": "curriculum/week-12-capstone-end-to-end-pipeline/._README.md", "title": ". README"},
+    {"path": "curriculum/week-12-capstone-end-to-end-pipeline/._resources.md", "title": ". resources"},
+    {"path": "curriculum/week-12-capstone-end-to-end-pipeline/README.md", "title": "Week 12 — Capstone: End-to-End Reproducible Bioinformatics Pipeline"},
+    {"path": "curriculum/week-12-capstone-end-to-end-pipeline/lecture-notes/._01-reproducibility-and-pipeline-as-code.md", "title": ". 01 reproducibility and pipeline as code"},
+    {"path": "curriculum/week-12-capstone-end-to-end-pipeline/lecture-notes/._02-conda-bioconda-and-containers.md", "title": ". 02 conda bioconda and containers"},
+    {"path": "curriculum/week-12-capstone-end-to-end-pipeline/lecture-notes/._03-project-tracks-and-deposit.md", "title": ". 03 project tracks and deposit"},
+    {"path": "curriculum/week-12-capstone-end-to-end-pipeline/lecture-notes/01-reproducibility-and-pipeline-as-code.md", "title": "Lecture 1 — The Reproducibility Crisis and Pipeline-as-Code"},
+    {"path": "curriculum/week-12-capstone-end-to-end-pipeline/lecture-notes/02-conda-bioconda-and-containers.md", "title": "Lecture 2 — Conda, bioconda, and Containers"},
+    {"path": "curriculum/week-12-capstone-end-to-end-pipeline/lecture-notes/03-project-tracks-and-deposit.md", "title": "Lecture 3 — Project Tracks, run-info.json, and the Deposit"},
+    {"path": "curriculum/week-12-capstone-end-to-end-pipeline/resources.md", "title": "Week 12 — Resources"}
   ]
 }
