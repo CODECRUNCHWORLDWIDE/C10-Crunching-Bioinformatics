@@ -20,6 +20,14 @@ By the end of this week, you will be able to:
 - **Classify** ~20 unknown DNA sequences to genus or species using a top-hit-with-E-value-cutoff classifier, report classification confidence per query, and produce a confusion matrix against a ground-truth label set.
 - **Identify** at least three failure modes of BLAST-based classification (low-complexity regions giving spurious hits, contaminated reference databases producing high-confidence wrong calls, paralog vs ortholog ambiguity) and the standard mitigation for each.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `CAP 4553` — explain heuristic sequence-database search and its scoring statistics, and interpret a result set by E-value and bit score. |
+| Industry | Assign an identity to an unknown sequence and state, in a number, how much confidence that call deserves. |
+| Beyond the bar | A labelled test set and a confusion matrix for the learner's classifier, so accuracy is measured rather than eyeballed off the top hit — `challenges/challenge-01-taxonomy-classifier.md` |
+
 ## Prerequisites
 
 This week assumes Weeks 1, 2, and 3 are **done and committed**. Specifically:

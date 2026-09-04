@@ -17,6 +17,14 @@ By the end of this week, you will be able to:
 - **Run** FastQC on a real FASTQ file and read its HTML output critically — what's a real problem, what's a cosmetic warning.
 - **Distinguish** between a `SeqRecord` and a plain `str`, and choose the right one for the job (hint: `str` for tight inner loops, `SeqRecord` whenever you need to round-trip metadata).
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `CS 4775` — read, write and manipulate biological sequence data programmatically, including quality-score encodings and the arithmetic behind them. |
+| Industry | Take delivery of a sequencing run and decide, from its quality profile, whether it is fit to analyse or has to go back. |
+| Beyond the bar | Streaming a multi-gigabyte FASTA without ever holding it in memory, a constraint a teaching dataset never imposes — `challenges/challenge-01-streaming-large-fasta.md` |
+
 ## Prerequisites
 
 This week assumes Week 1 is **done and committed**. Specifically:

@@ -11,6 +11,13 @@ Ten multiple-choice questions on Needleman-Wunsch, Smith-Waterman, substitution 
 - C) The global maximum of `H`.
 - D) `H[m, 0] + H[0, n]`.
 
+<details>
+<summary>Answer</summary>
+
+**B** — `H[m, n]` is the score of the optimal alignment that uses *all* of `A` and *all* of `B` end-to-end. That is the definition of global alignment. The global max of `H` is where Smith-Waterman tracebacks start, but for NW it is `H[m, n]`.
+
+</details>
+
 ---
 
 **Q2.** Smith-Waterman differs from Needleman-Wunsch in exactly two places. Which two?
@@ -19,6 +26,13 @@ Ten multiple-choice questions on Needleman-Wunsch, Smith-Waterman, substitution 
 - B) The recurrence takes the max with zero (the zero floor), and traceback starts at the global maximum of `H` instead of at `H[m, n]`.
 - C) The matrix is filled column-by-column instead of row-by-row, and the gap penalty is replaced with an affine penalty.
 - D) The score is divided by sequence length, and a probability cutoff replaces the substitution matrix.
+
+<details>
+<summary>Answer</summary>
+
+**B** — The zero floor and the global-argmax traceback start are the two changes. Smith-Waterman uses the same substitution matrix and the same gap penalty as the NW it is built from; what changes is the recurrence (max-with-zero) and the traceback start cell.
+
+</details>
 
 ---
 
@@ -29,6 +43,13 @@ Ten multiple-choice questions on Needleman-Wunsch, Smith-Waterman, substitution 
 - C) PAM and BLOSUM matrices give identical scores for any input — they are mathematically equivalent.
 - D) BLOSUM62 entries are derived from physical-chemistry principles of amino acid side chains, not from observed substitution frequencies.
 
+<details>
+<summary>Answer</summary>
+
+**B** — High BLOSUM number = clustering at high percent identity = matrix appropriate for similar sequences. PAM is the opposite: high PAM number means distant. PAM250 is for distant, BLOSUM62 is the medium-divergence default. BLOSUM matrices are derived empirically from the BLOCKS database, not from chemistry.
+
+</details>
+
 ---
 
 **Q4.** BLOSUM62 scores `s('W', 'W')` (tryptophan vs tryptophan) at:
@@ -37,6 +58,13 @@ Ten multiple-choice questions on Needleman-Wunsch, Smith-Waterman, substitution 
 - B) +4.
 - C) +9.
 - D) +11.
+
+<details>
+<summary>Answer</summary>
+
+**D** — Tryptophan is the largest and rarest of the 20 standard amino acids, and a `W vs W` match is highly informative. BLOSUM62 awards it +11, the largest single diagonal entry in the matrix.
+
+</details>
 
 ---
 
@@ -47,6 +75,13 @@ Ten multiple-choice questions on Needleman-Wunsch, Smith-Waterman, substitution 
 - C) Edit distance — it is symmetric and easier to compute.
 - D) Hamming distance — for protein, single-character substitutions are the dominant signal.
 
+<details>
+<summary>Answer</summary>
+
+**B** — Smith-Waterman, every time, for "find the matching sub-region in this database." BLAST is, under the hood, a heuristic-seeded Smith-Waterman. Global alignment is appropriate when the two sequences are known a priori to span the same region.
+
+</details>
+
 ---
 
 **Q6.** A gap of length 5 under an affine gap penalty with `open = -11` and `extend = -1` costs:
@@ -55,6 +90,13 @@ Ten multiple-choice questions on Needleman-Wunsch, Smith-Waterman, substitution 
 - B) -11.
 - C) -15.
 - D) -55.
+
+<details>
+<summary>Answer</summary>
+
+**C** — `open + extend * (k - 1) = -11 + (-1) * 4 = -15`. The first residue costs the open penalty; each additional residue costs the extend penalty.
+
+</details>
 
 ---
 
@@ -65,6 +107,13 @@ Ten multiple-choice questions on Needleman-Wunsch, Smith-Waterman, substitution 
 - C) O(mn).
 - D) O(2^(m+n)).
 
+<details>
+<summary>Answer</summary>
+
+**C** — Two nested loops over `m` and `n` cells, constant work per cell. O(mn) is the textbook answer. Hirschberg's trick reduces *space* to O(min(m, n)) but does not change time complexity.
+
+</details>
+
 ---
 
 **Q8.** In Biopython 1.83, the recommended replacement for the deprecated `Bio.pairwise2` is:
@@ -73,6 +122,13 @@ Ten multiple-choice questions on Needleman-Wunsch, Smith-Waterman, substitution 
 - B) `Bio.Align.PairwiseAligner`.
 - C) `Bio.Align.LegacyAligner`.
 - D) `Bio.AlignIO.pairwise`.
+
+<details>
+<summary>Answer</summary>
+
+**B** — `Bio.Align.PairwiseAligner` is the modern (Biopython 1.79+) API. `Bio.pairwise2` is deprecated and slated for removal; `Bio.SubsMat` is also deprecated in favor of `Bio.Align.substitution_matrices`. Get used to the new names.
+
+</details>
 
 ---
 
@@ -83,6 +139,13 @@ Ten multiple-choice questions on Needleman-Wunsch, Smith-Waterman, substitution 
 - C) `Bio.pairwise2.format_alignment(blosum62, 'W', 'W')`
 - D) `Bio.Align.PairwiseAligner.score('W', 'W', matrix='BLOSUM62')`
 
+<details>
+<summary>Answer</summary>
+
+**A** — `Bio.Align.substitution_matrices.load("BLOSUM62")['W', 'W']`. The returned object is a NumPy-array-like subclass with letter indexing. The other options reference deprecated APIs (B), nonexistent ones (C, D), or wrong call signatures.
+
+</details>
+
 ---
 
 **Q10.** Smith-Waterman traceback should stop when:
@@ -92,35 +155,16 @@ Ten multiple-choice questions on Needleman-Wunsch, Smith-Waterman, substitution 
 - C) The traceback reaches `H[m, n]`.
 - D) The traceback has emitted `min(m, n)` columns.
 
----
-
-## Answer key
-
 <details>
-<summary>Click to reveal answers</summary>
+<summary>Answer</summary>
 
-1. **B** — `H[m, n]` is the score of the optimal alignment that uses *all* of `A` and *all* of `B` end-to-end. That is the definition of global alignment. The global max of `H` is where Smith-Waterman tracebacks start, but for NW it is `H[m, n]`.
+**B** — Smith-Waterman traceback stops at the first zero, not at `H[0, 0]`. The traceback start is the global argmax of `H`, and the stop is the first zero on the back-path. The aligned region is what lies between those two coordinates.
 
-2. **B** — The zero floor and the global-argmax traceback start are the two changes. Smith-Waterman uses the same substitution matrix and the same gap penalty as the NW it is built from; what changes is the recurrence (max-with-zero) and the traceback start cell.
 
-3. **B** — High BLOSUM number = clustering at high percent identity = matrix appropriate for similar sequences. PAM is the opposite: high PAM number means distant. PAM250 is for distant, BLOSUM62 is the medium-divergence default. BLOSUM matrices are derived empirically from the BLOCKS database, not from chemistry.
-
-4. **D** — Tryptophan is the largest and rarest of the 20 standard amino acids, and a `W vs W` match is highly informative. BLOSUM62 awards it +11, the largest single diagonal entry in the matrix.
-
-5. **B** — Smith-Waterman, every time, for "find the matching sub-region in this database." BLAST is, under the hood, a heuristic-seeded Smith-Waterman. Global alignment is appropriate when the two sequences are known a priori to span the same region.
-
-6. **C** — `open + extend * (k - 1) = -11 + (-1) * 4 = -15`. The first residue costs the open penalty; each additional residue costs the extend penalty.
-
-7. **C** — Two nested loops over `m` and `n` cells, constant work per cell. O(mn) is the textbook answer. Hirschberg's trick reduces *space* to O(min(m, n)) but does not change time complexity.
-
-8. **B** — `Bio.Align.PairwiseAligner` is the modern (Biopython 1.79+) API. `Bio.pairwise2` is deprecated and slated for removal; `Bio.SubsMat` is also deprecated in favor of `Bio.Align.substitution_matrices`. Get used to the new names.
-
-9. **A** — `Bio.Align.substitution_matrices.load("BLOSUM62")['W', 'W']`. The returned object is a NumPy-array-like subclass with letter indexing. The other options reference deprecated APIs (B), nonexistent ones (C, D), or wrong call signatures.
-
-10. **B** — Smith-Waterman traceback stops at the first zero, not at `H[0, 0]`. The traceback start is the global argmax of `H`, and the stop is the first zero on the back-path. The aligned region is what lies between those two coordinates.
+---
 
 </details>
 
----
-
 If you scored under 7, re-read Lecture 1 for the algorithm questions and Lecture 2 for the substitution-matrix and gap-penalty questions. If you scored 9 or 10, you are ready to start the [homework](./homework.md).
+
+---

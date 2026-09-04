@@ -25,6 +25,14 @@ By the end of this week, you will be able to:
 - **Write** a defensible per-variant interpretation report with a one-line summary per variant, the source databases and versions, the date of the run, and a "this is not a clinical interpretation" disclaimer.
 - **Query** PharmGKB for variants in the well-characterized pharmacogenes (`CYP2D6`, `CYP2C19`, `CYP2C9`, `TPMT`, `DPYD`, `SLCO1B1`, `VKORC1`, `CYP3A5`, `UGT1A1`, `HLA-B`) and translate a variant call into a star-allele haplotype and a CPIC-derived drug-response phenotype. Note where star-allele calling fails (the long-range haplotype phasing problem) and what the limits are.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `BSC 4934` — annotate variants for functional consequence and interpret them against population and clinical evidence. |
+| Industry | Write a per-variant interpretation that names its database versions, its run date and its limits, so a reviewer can audit the reasoning. |
+| Beyond the bar | The mechanically applicable subset of the ACMG/AMP criteria implemented as code with a `pytest` case per criterion — clinical-genomics material, not undergraduate bioinformatics material — `challenges/challenge-01-implement-acmg-criteria.md` |
+
 ## Prerequisites
 
 This week assumes Weeks 1-7 are **done and committed**. Specifically:

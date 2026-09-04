@@ -13,6 +13,13 @@ Ten multiple-choice questions on tumor-normal somatic calling, Mutect2 mechanics
 - C) The normal sample is sequenced first and the tumor sample is sequenced only if specific candidate variants are identified.
 - D) The model produces a list of variants present in the normal but not in the tumor.
 
+<details>
+<summary>Answer</summary>
+
+**B** — Matched-pair model. Lecture 1 §1-§3. The model assumes equal processing of both samples; the somatic call is the set difference.
+
+</details>
+
 ---
 
 **Q2.** A tumor sample with 40% purity carries a heterozygous truncal somatic variant. The expected observed allele frequency in the BAM at 50x coverage is approximately:
@@ -21,6 +28,13 @@ Ten multiple-choice questions on tumor-normal somatic calling, Mutect2 mechanics
 - B) 40% (the purity is 40%).
 - C) 20% (0.5 × purity = 0.5 × 0.4 = 0.2).
 - D) 100% (somatic variants are always at AF 1.0).
+
+<details>
+<summary>Answer</summary>
+
+**C** — `observed_AF = purity * tumor_cell_AF + (1 - purity) * normal_AF`. For purity 0.4, tumor_cell_AF 0.5, normal_AF 0: observed_AF = 0.5 * 0.4 = 0.2. Lecture 1 §4.
+
+</details>
 
 ---
 
@@ -31,6 +45,13 @@ Ten multiple-choice questions on tumor-normal somatic calling, Mutect2 mechanics
 - C) The patient's name in the EHR.
 - D) The reference build name.
 
+<details>
+<summary>Answer</summary>
+
+**B** — The values of the BAM `@RG SM:` headers. Lecture 2 §3. Mis-tagging the names produces silent inverted calls; the exercise wrapper verifies them via `samtools view -H` before calling Mutect2.
+
+</details>
+
 ---
 
 **Q4.** The Panel of Normals (PON) for Mutect2 is:
@@ -39,6 +60,13 @@ Ten multiple-choice questions on tumor-normal somatic calling, Mutect2 mechanics
 - B) A multi-sample VCF distilled from many technically-similar normal samples; variants present in the PON at non-trivial frequency are flagged as recurrent technical artifacts and Mutect2 down-weights or filters them.
 - C) A copy of gnomAD restricted to common variants.
 - D) An optional output file that records normal-sample calls.
+
+<details>
+<summary>Answer</summary>
+
+**B** — Multi-sample VCF of recurrent normal-sample technical artifacts. Lecture 1 §9; Lecture 2 §2. Platform-specific; the Broad publishes a free GRCh38 PON.
+
+</details>
 
 ---
 
@@ -49,6 +77,13 @@ Ten multiple-choice questions on tumor-normal somatic calling, Mutect2 mechanics
 - C) Removes all low-AF variants below a fixed threshold.
 - D) Identifies copy-number variants in the tumor.
 
+<details>
+<summary>Answer</summary>
+
+**B** — Cross-sample contamination estimation and filter. Lecture 1 §5; Lecture 2 §6. Note: purity and contamination are different concepts; contamination is corrected by `--contamination-table`, purity is not.
+
+</details>
+
 ---
 
 **Q6.** For a somatic SNV at chromosome chr22, position 23,456,789, with REF=G and ALT=A in a reference where the 3-mer at positions 23,456,788-23,456,790 is `CGT`, the pyrimidine-normalized 96-class label is:
@@ -57,6 +92,13 @@ Ten multiple-choice questions on tumor-normal somatic calling, Mutect2 mechanics
 - B) `A[C>T]G` (after reverse-complementing the context and complementing the alleles, since REF is a purine).
 - C) `T[G>A]C`.
 - D) `G[A>T]C`.
+
+<details>
+<summary>Answer</summary>
+
+**B** — `A[C>T]G`. The original REF `G` is a purine, so we reverse-complement the context `CGT` to `ACG`; the alleles `G>A` complement to `C>T`. The result is `A[C>T]G`. Lecture 3 §2; Exercise 3 helper `normalize_to_pyrimidine`.
+
+</details>
 
 ---
 
@@ -67,6 +109,13 @@ Ten multiple-choice questions on tumor-normal somatic calling, Mutect2 mechanics
 - C) The decomposition is exclusively explained by SBS5 because it has the highest contribution.
 - D) The decomposition has failed completely; discard the result.
 
+<details>
+<summary>Answer</summary>
+
+**B** — Poor cosine and known degeneracy. Lecture 3 §7-§8. The cosine of 0.79 is below the 0.85 threshold; SBS3 and SBS39 are known to be co-linear. Report the ambiguity, do not collapse it.
+
+</details>
+
 ---
 
 **Q8.** OncoKB FDA Evidence Level 1 means:
@@ -75,6 +124,13 @@ Ten multiple-choice questions on tumor-normal somatic calling, Mutect2 mechanics
 - B) FDA-recognized biomarker predictive of response to an FDA-approved drug in this specific tumor type.
 - C) The variant is found at frequency 1% in COSMIC.
 - D) The variant has been mentioned in one CIViC evidence item.
+
+<details>
+<summary>Answer</summary>
+
+**B** — FDA-recognized biomarker predictive of response in this tumor type. Lecture 3 §9 (the OncoKB section). The OncoKB levels are public at <https://www.oncokb.org/levels>.
+
+</details>
 
 ---
 
@@ -85,6 +141,13 @@ Ten multiple-choice questions on tumor-normal somatic calling, Mutect2 mechanics
 - C) `germline` (the matched normal is doing its job: most candidate somatic variants turn out to be inherited germline).
 - D) `strand_bias`.
 
+<details>
+<summary>Answer</summary>
+
+**C** — `germline`. Lecture 2 §5 and §10. On real-data runs, hundreds to thousands of low-AF candidates turn out to be inherited variants that the matched normal also carries.
+
+</details>
+
 ---
 
 **Q10.** Two Mutect2 runs on the same tumor-normal BAM pair, same reference, same PON, and same germline-resource produce VCFs that differ at 30% of low-AF variants. The most likely cause is:
@@ -94,35 +157,16 @@ Ten multiple-choice questions on tumor-normal somatic calling, Mutect2 mechanics
 - C) The variants are randomly sampled.
 - D) Mutect2 emits a different sub-set on every run.
 
----
-
-## Answer key
-
 <details>
-<summary>Click to reveal answers</summary>
+<summary>Answer</summary>
 
-1. **B** — Matched-pair model. Lecture 1 §1-§3. The model assumes equal processing of both samples; the somatic call is the set difference.
+**B** — One of the upstream inputs differed. Lecture 2 §13-§14. Mutect2 itself is deterministic. The most common silent input differences are reference-build mismatch, gnomAD-release version, PON release, and GATK version.
 
-2. **C** — `observed_AF = purity * tumor_cell_AF + (1 - purity) * normal_AF`. For purity 0.4, tumor_cell_AF 0.5, normal_AF 0: observed_AF = 0.5 * 0.4 = 0.2. Lecture 1 §4.
 
-3. **B** — The values of the BAM `@RG SM:` headers. Lecture 2 §3. Mis-tagging the names produces silent inverted calls; the exercise wrapper verifies them via `samtools view -H` before calling Mutect2.
-
-4. **B** — Multi-sample VCF of recurrent normal-sample technical artifacts. Lecture 1 §9; Lecture 2 §2. Platform-specific; the Broad publishes a free GRCh38 PON.
-
-5. **B** — Cross-sample contamination estimation and filter. Lecture 1 §5; Lecture 2 §6. Note: purity and contamination are different concepts; contamination is corrected by `--contamination-table`, purity is not.
-
-6. **B** — `A[C>T]G`. The original REF `G` is a purine, so we reverse-complement the context `CGT` to `ACG`; the alleles `G>A` complement to `C>T`. The result is `A[C>T]G`. Lecture 3 §2; Exercise 3 helper `normalize_to_pyrimidine`.
-
-7. **B** — Poor cosine and known degeneracy. Lecture 3 §7-§8. The cosine of 0.79 is below the 0.85 threshold; SBS3 and SBS39 are known to be co-linear. Report the ambiguity, do not collapse it.
-
-8. **B** — FDA-recognized biomarker predictive of response in this tumor type. Lecture 3 §9 (the OncoKB section). The OncoKB levels are public at <https://www.oncokb.org/levels>.
-
-9. **C** — `germline`. Lecture 2 §5 and §10. On real-data runs, hundreds to thousands of low-AF candidates turn out to be inherited variants that the matched normal also carries.
-
-10. **B** — One of the upstream inputs differed. Lecture 2 §13-§14. Mutect2 itself is deterministic. The most common silent input differences are reference-build mismatch, gnomAD-release version, PON release, and GATK version.
+---
 
 </details>
 
----
-
 If you scored under 7, re-read Lecture 1 §3-§5 (matched normal, purity, contamination), Lecture 2 §2-§3 (Mutect2 internals, sample-name verification), Lecture 2 §5-§6 (filter set and contamination flow), and Lecture 3 §2 and §7-§9 (pyrimidine normalization, the signature degeneracy, and the OncoKB level definitions). If you scored 9 or 10, you are ready to start the [homework](./homework.md).
+
+---

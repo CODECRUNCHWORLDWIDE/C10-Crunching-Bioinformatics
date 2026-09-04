@@ -19,6 +19,14 @@ By the end of this week, you will be able to:
 - **Articulate** the two data-ethics rules of C10 and explain *why* each one exists, not just *that* it exists.
 - **Recognize** when a sentence about genetics crosses from "associated with" into genetic determinism — and avoid that language in your own writing.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `BSC 4934` — describe the molecular biology, the canonical sequence data formats, and the data-governance constraints that computational analysis of biological data operates under. |
+| Industry | Establish that a dataset is consent-cleared and safe to work with, and record where it came from, before a line of analysis code is written. |
+| Beyond the bar | Data ethics is taught and assessed as a unit of its own — consent, re-identification, the IRB route, and the line between "associated with" and genetic determinism — which no bioinformatics syllabus requires — `lecture-notes/02-data-ethics-and-public-data-sources.md` |
+
 ## Prerequisites
 
 This week assumes you have completed **C1 weeks 1–11**, or have equivalent skill. Specifically:

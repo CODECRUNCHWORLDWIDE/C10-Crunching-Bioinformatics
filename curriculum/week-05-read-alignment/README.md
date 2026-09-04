@@ -22,6 +22,14 @@ By the end of this week, you will be able to:
 - **Mark** PCR/optical duplicates with `samtools markdup` (after `samtools fixmate -m`), and explain the difference between *removing* duplicates and *marking* them with the `0x400` flag bit.
 - **Identify** at least three failure modes of short-read alignment (low-complexity regions giving high multimapper rates, large structural variants exceeding the aligner's gap-open threshold, contamination from adapters or other organisms) and the standard QC signal each one produces.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `CAP 4553` — map high-throughput sequencing reads to a reference genome and work with the resulting alignment formats. |
+| Industry | Produce a sorted, indexed, duplicate-marked BAM that every downstream tool in the lab will accept without complaint. |
+| Beyond the bar | Decoding `FLAG` bits and `CIGAR` strings by hand with no library help, then computing the duplication rate manually and diffing it against `samtools markdup` — `challenges/challenge-01-detect-duplicates.md` |
+
 ## Prerequisites
 
 This week assumes Weeks 1, 2, 3, and 4 are **done and committed**. Specifically:

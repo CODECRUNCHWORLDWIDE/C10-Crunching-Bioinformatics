@@ -32,6 +32,14 @@ By the end of this week, you will be able to:
 - **Build** the full pipeline as a CLI script: tumor BAM and normal BAM in (we ship a small didactic pair), Mutect2 + FilterMutectCalls, optional Strelka2 cross-check, optional `CalculateContamination` step, parse the PASS VCF, render the 96-class spectrum, decompose into COSMIC v3.3 signatures, emit a Markdown report and a `run-info.json`.
 - **Identify and reason about** the standard failure modes: low tumor purity (apparent allele frequencies scaled; low-AF true positives lost in the noise floor), tumor-in-normal contamination (true positives filtered out by the normal-artifact filter), cross-sample contamination (false positives appear at the contaminant's germline allele frequency), reference-build drift (a pipeline pinned to GRCh38 will silently produce coordinate-shifted calls on GRCh37 input), and the signature decomposition's degeneracy (some signatures are co-linear — SBS3 and SBS39 are notoriously hard to separate without sufficient mutation counts).
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | Past the outcome set: `BSC 4934` covers germline variant analysis and stops there. Matched tumour–normal somatic calling and mutational-signature decomposition belong to a specialised cancer-genomics course, and this week is that material. |
+| Industry | Separate the mutations a tumour acquired from the ones the patient was born with, and state how far tumour purity limits that answer. |
+| Beyond the bar | COSMIC v3.3 mutational-signature decomposition read out with its goodness-of-fit and residual, alongside an independently written second caller run as a cross-check — `challenges/challenge-01-strelka2-cross-check.md` |
+
 ## Prerequisites
 
 This week assumes Weeks 1-10 are **done and committed**. Specifically:

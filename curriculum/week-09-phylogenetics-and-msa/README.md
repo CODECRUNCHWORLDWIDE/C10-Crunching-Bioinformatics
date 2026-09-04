@@ -25,6 +25,14 @@ By the end of this week, you will be able to:
 - **Render** a tree with `Bio.Phylo.draw_ascii` for the terminal sanity check and with `Bio.Phylo.draw` or `ete3.TreeStyle` for a PNG / SVG. Colour internal branches by bootstrap support; label leaves by species; root on a named outgroup.
 - **Identify and reason about** the standard failure modes: alignment-induced artefacts, long-branch attraction (Felsenstein 1978, *Systematic Biology* 27:401), incongruence between gene trees and species trees, the GIGO problem (low-coverage sequences pull the tree), and the seed-and-version-dependence problem that the run-info JSON is meant to defend against.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `CS 4775` — construct multiple sequence alignments and infer phylogenetic trees, with an assessment of branch support. |
+| Industry | Deliver a tree somebody else can regenerate from the same inputs, seeds and tool versions and get the same topology. |
+| Beyond the bar | A maximum-likelihood tree with ultrafast bootstrap, and a Newick-to-Nexus round-trip that proves the topology survived the format change — `challenges/challenge-02-newick-nexus-roundtrip.md` |
+
 ## Prerequisites
 
 This week assumes Weeks 1-8 are **done and committed**. Specifically:

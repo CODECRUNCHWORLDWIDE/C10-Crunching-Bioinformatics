@@ -28,6 +28,14 @@ By the end of this week, you will be able to:
 - **Build** the full pipeline as a CLI script: FASTQ in (simulated by `badread` from a known reference); read filter; Flye; Medaka polish (ONT) or no polish (HiFi); asmstats; BUSCO; render a Markdown QC summary; emit `run-info.json`. Run end-to-end in under 10 minutes on a 1 Mb genome on a laptop.
 - **Identify and reason about** the standard failure modes: undercollapsed repeats (the assembler emits N tandem copies as N contigs when they are really N copies of one repeat in a row), overcollapsed repeats (the assembler emits one contig where the true sequence has K copies; this inflates N50 and deflates the assembly length), chimeric contigs (two distant regions joined by a low-confidence overlap), basecaller-version drift, and the model-mismatch problem in polishing.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `CAP 4553` — assemble a genome de novo from sequencing reads and assess the quality of the assembly. |
+| Industry | Say whether a draft assembly is good enough to publish or to build on, from its N50, its BUSCO completeness and its graph. |
+| Beyond the bar | Opening the assembly graph in Bandage and classifying its topology — bubbles, tangles, a closed circular chromosome — instead of trusting the contig FASTA — `challenges/challenge-02-bandage-graph-inspection.md` |
+
 ## Prerequisites
 
 This week assumes Weeks 1-9 are **done and committed**. Specifically:

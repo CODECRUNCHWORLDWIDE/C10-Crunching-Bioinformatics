@@ -11,6 +11,13 @@ Ten multiple-choice questions on FASTA, FASTQ, Phred quality, and Biopython IO. 
 - C) Line 3 (the `+` separator).
 - D) Line 4.
 
+<details>
+<summary>Answer</summary>
+
+**D** — Line 4 is the quality string. Lines 1, 2, 3, 4 are header, sequence, `+` separator, quality. A robust parser counts lines in groups of four; it never splits on a delimiter, because `@` and `+` are both legitimate quality characters.
+
+</details>
+
 ---
 
 **Q2.** A FASTQ quality character is `?`. ASCII for `?` is 63. Assuming Phred+33 encoding, what Phred quality does this character represent?
@@ -19,6 +26,13 @@ Ten multiple-choice questions on FASTA, FASTQ, Phred quality, and Biopython IO. 
 - B) Q30.
 - C) Q33.
 - D) Q96.
+
+<details>
+<summary>Answer</summary>
+
+**B** — Phred+33: `Q = ASCII - 33 = 63 - 33 = 30`. Q30 corresponds to a 1-in-1,000 error rate and is the canonical Illumina quality target.
+
+</details>
 
 ---
 
@@ -29,6 +43,13 @@ Ten multiple-choice questions on FASTA, FASTQ, Phred quality, and Biopython IO. 
 - C) `Bio.SeqIO.to_dict`
 - D) `Bio.SeqIO.index`
 
+<details>
+<summary>Answer</summary>
+
+**B** — `SeqIO.read` asserts exactly one record. `SeqIO.parse` is a generator (will not fail on multi-record files), `to_dict` and `index` are for keyed access. The fail-loud helper is the right tool when "single record" is a precondition.
+
+</details>
+
 ---
 
 **Q4.** You inspect a FASTQ file and the lowest ASCII character anywhere in the quality strings is `B` (ASCII 66). The most likely encoding is:
@@ -37,6 +58,13 @@ Ten multiple-choice questions on FASTA, FASTQ, Phred quality, and Biopython IO. 
 - B) Illumina 1.8+ / Phred+33.
 - C) Solexa+64 or Illumina 1.3+/1.5+ / Phred+64.
 - D) Unencoded — the file is malformed.
+
+<details>
+<summary>Answer</summary>
+
+**C** — Phred+33 quality characters range from `!` (33) upward. Anything in the `@`–`B` region (64–66) cannot be a Phred+33 Q0–Q2 (which would be `!`–`#`), so the file is almost certainly Phred+64. The Illumina 1.5+ quirk explicitly marks low-confidence bases with `B`.
+
+</details>
 
 ---
 
@@ -47,6 +75,13 @@ Ten multiple-choice questions on FASTA, FASTQ, Phred quality, and Biopython IO. 
 - C) 1 in 1,000.
 - D) 1 in 10,000.
 
+<details>
+<summary>Answer</summary>
+
+**D** — `Q = -10 log10(P)`, so Q40 → P = 10^(-4) = 0.0001 = 1 in 10,000. Memorize Q20=1%, Q30=0.1%, Q40=0.01%.
+
+</details>
+
 ---
 
 **Q6.** Why does the implicit FASTA rule "all lines after the header until the next `>` line are sequence" matter operationally?
@@ -55,6 +90,13 @@ Ten multiple-choice questions on FASTA, FASTQ, Phred quality, and Biopython IO. 
 - B) It is the reason FASTA records cannot be parsed in parallel.
 - C) It is what enables compression of FASTA below 50% of plain-text size.
 - D) It is the reason FASTA cannot represent protein sequences.
+
+<details>
+<summary>Answer</summary>
+
+**A** — The "all lines until next `>` are sequence" rule is what lets you concatenate FASTA files without any glue logic. It is also why grep-style processing of FASTA is so easy. (Parallel parsing is possible by scanning for `^>` markers; compression isn't structurally enabled by the rule; protein FASTA is unaffected.)
+
+</details>
 
 ---
 
@@ -65,6 +107,13 @@ Ten multiple-choice questions on FASTA, FASTQ, Phred quality, and Biopython IO. 
 - C) Iterate with `SeqIO.parse` directly over `gzip.open(file, "rt")`, accumulating per-position sums and counts, never holding more than one record.
 - D) Load into Biopython's `SeqIO.to_dict` and index by read id.
 
+<details>
+<summary>Answer</summary>
+
+**C** — Stream. `SeqIO.parse` over a gzip handle is bounded-memory regardless of file size. The other options either load the whole file into RAM (A, D) or waste disk and add an unnecessary pandas dependency (B).
+
+</details>
+
 ---
 
 **Q8.** A `SeqRecord` parsed from a FASTQ file stores the per-base Phred qualities at which attribute?
@@ -73,6 +122,13 @@ Ten multiple-choice questions on FASTA, FASTQ, Phred quality, and Biopython IO. 
 - B) `record.seq.qualities`
 - C) `record.letter_annotations["phred_quality"]`
 - D) `record.annotations["quality"]`
+
+<details>
+<summary>Answer</summary>
+
+**C** — `record.letter_annotations["phred_quality"]`. Biopython stores per-letter info (quality, secondary structure, etc.) in this dict for any record where the annotation applies per-base. The list length is always equal to `len(record.seq)`.
+
+</details>
 
 ---
 
@@ -83,6 +139,13 @@ Ten multiple-choice questions on FASTA, FASTQ, Phred quality, and Biopython IO. 
 - C) `record.letter_annotations["phred_quality"] = record.letter_annotations["phred_quality"][:50]`
 - D) `record.seq = record.seq[:50]; record.qual = record.qual[:50]`
 
+<details>
+<summary>Answer</summary>
+
+**B** — Slice the whole `SeqRecord` with `record[:50]`. This is the only option that keeps `seq` and `letter_annotations` in lockstep. Option A leaves the quality unchanged (and Biopython will refuse to write the record). Option C is dangerous — you must update both halves. Option D uses a `.qual` attribute that doesn't exist on a Biopython `SeqRecord`.
+
+</details>
+
 ---
 
 **Q10.** Which statement about FastQC's pass / warn / fail icons is **most accurate**?
@@ -92,35 +155,16 @@ Ten multiple-choice questions on FASTA, FASTQ, Phred quality, and Biopython IO. 
 - C) The icons are derived from Phred quality scores alone.
 - D) A "pass" icon means the library is publication-ready.
 
----
-
-## Answer key
-
 <details>
-<summary>Click to reveal answers</summary>
+<summary>Answer</summary>
 
-1. **D** — Line 4 is the quality string. Lines 1, 2, 3, 4 are header, sequence, `+` separator, quality. A robust parser counts lines in groups of four; it never splits on a delimiter, because `@` and `+` are both legitimate quality characters.
+**B** — The icons are heuristics calibrated for standard Illumina whole-genome shotgun. Common "fails" on RNA-seq (random-hexamer priming bias at positions 1–15), amplicon (intentional duplication), and small-RNA (intentionally short reads) libraries are *expected*, not red flags. Read the modules; don't read the icons in isolation.
 
-2. **B** — Phred+33: `Q = ASCII - 33 = 63 - 33 = 30`. Q30 corresponds to a 1-in-1,000 error rate and is the canonical Illumina quality target.
 
-3. **B** — `SeqIO.read` asserts exactly one record. `SeqIO.parse` is a generator (will not fail on multi-record files), `to_dict` and `index` are for keyed access. The fail-loud helper is the right tool when "single record" is a precondition.
-
-4. **C** — Phred+33 quality characters range from `!` (33) upward. Anything in the `@`–`B` region (64–66) cannot be a Phred+33 Q0–Q2 (which would be `!`–`#`), so the file is almost certainly Phred+64. The Illumina 1.5+ quirk explicitly marks low-confidence bases with `B`.
-
-5. **D** — `Q = -10 log10(P)`, so Q40 → P = 10^(-4) = 0.0001 = 1 in 10,000. Memorize Q20=1%, Q30=0.1%, Q40=0.01%.
-
-6. **A** — The "all lines until next `>` are sequence" rule is what lets you concatenate FASTA files without any glue logic. It is also why grep-style processing of FASTA is so easy. (Parallel parsing is possible by scanning for `^>` markers; compression isn't structurally enabled by the rule; protein FASTA is unaffected.)
-
-7. **C** — Stream. `SeqIO.parse` over a gzip handle is bounded-memory regardless of file size. The other options either load the whole file into RAM (A, D) or waste disk and add an unnecessary pandas dependency (B).
-
-8. **C** — `record.letter_annotations["phred_quality"]`. Biopython stores per-letter info (quality, secondary structure, etc.) in this dict for any record where the annotation applies per-base. The list length is always equal to `len(record.seq)`.
-
-9. **B** — Slice the whole `SeqRecord` with `record[:50]`. This is the only option that keeps `seq` and `letter_annotations` in lockstep. Option A leaves the quality unchanged (and Biopython will refuse to write the record). Option C is dangerous — you must update both halves. Option D uses a `.qual` attribute that doesn't exist on a Biopython `SeqRecord`.
-
-10. **B** — The icons are heuristics calibrated for standard Illumina whole-genome shotgun. Common "fails" on RNA-seq (random-hexamer priming bias at positions 1–15), amplicon (intentional duplication), and small-RNA (intentionally short reads) libraries are *expected*, not red flags. Read the modules; don't read the icons in isolation.
+---
 
 </details>
 
----
-
 If you scored under 7, re-read the lectures for the questions you missed — especially anything involving Phred encoding or `SeqRecord` slicing. If you scored 9 or 10, you are ready to move to the [homework](./homework.md).
+
+---

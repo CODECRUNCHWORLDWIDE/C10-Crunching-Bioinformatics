@@ -21,6 +21,14 @@ By the end of this week, you will be able to:
 - **Compare** two variant callers (`bcftools call` vs GATK `HaplotypeCaller`) on the same BAM with `bcftools isec`, and interpret the intersection / private-to-A / private-to-B counts.
 - **Identify** at least three failure modes of variant calling (low-coverage positions producing false negatives, PCR-duplicate stacks producing false positives if dedup was skipped, mapping-quality-zero reads in repetitive regions producing both) and the standard QC signal each one produces in a VCF.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `BSC 4934` — call and filter genetic variants from aligned reads, and evaluate the quality of a variant call set. |
+| Industry | Hand a filtered, annotated VCF to a biologist together with the QC numbers that say how far to trust it. |
+| Beyond the bar | A second, independently written caller run over the same BAM, with every disagreement between the two call sets accounted for — `challenges/challenge-01-compare-callers.md` |
+
 ## Prerequisites
 
 This week assumes Weeks 1-5 are **done and committed**. Specifically:

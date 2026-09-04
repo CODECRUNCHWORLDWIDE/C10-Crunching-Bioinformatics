@@ -23,6 +23,14 @@ By the end of this week, you will be able to:
 - **Compare** the architectural difference between alignment (STAR/HISAT2 → BAM → featureCounts) and pseudoalignment (kallisto/Salmon, no BAM) in two paragraphs, naming the Bray et al. 2016 "k-mer compatibility class" abstraction and the Patro et al. 2017 "selective alignment" refinement.
 - **Identify** at least three failure modes of RNA-seq quantification (ribosomal-RNA contamination inflating effective library size, 3' bias from polyA-selection skewing per-position coverage, multi-mapping reads in paralog families producing fractional counts that confuse naive downstream consumers) and the standard QC signal each one produces in a `fastp`, `kallisto`, or `featureCounts` log.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `CS 4775` — quantify gene expression from RNA sequencing data and normalize it across samples and transcript lengths. |
+| Industry | Turn a batch of raw RNA-seq FASTQ files into a counts matrix another analyst can pick up and work from. |
+| Beyond the bar | TPM and CPM computed by hand from their definitions and checked against the tool's own output, then three quantifiers run on one sample and their agreement measured — `challenges/challenge-02-compare-tools-on-same-sample.md` |
+
 ## Prerequisites
 
 This week assumes Weeks 1-6 are **done and committed**. Specifically:

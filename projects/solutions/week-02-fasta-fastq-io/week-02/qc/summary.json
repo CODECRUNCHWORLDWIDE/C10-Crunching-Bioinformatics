@@ -1,0 +1,18 @@
+{
+  "sample": "SYNTHETIC-DEMO",
+  "accession": "NONE (simulated, make_demo_fastq.py --seed 2026)",
+  "chromosome": "NA",
+  "n_reads_raw": 100000,
+  "n_reads_trimmed": 99518,
+  "mean_len_raw": 100.0,
+  "mean_len_trimmed": 93.12,
+  "mean_per_base_q_raw_pos_1": 37.48,
+  "mean_per_base_q_raw_pos_35": 36.18,
+  "mean_per_base_q_raw_pos_75": 27.93,
+  "encoding_detected": "Phred+33",
+  "tools": {
+    "fastqc": null,
+    "biopython": "1.88",
+    "seqkit": null
+  }
+}

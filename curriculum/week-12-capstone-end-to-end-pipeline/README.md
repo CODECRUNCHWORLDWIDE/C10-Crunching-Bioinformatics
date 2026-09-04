@@ -29,6 +29,14 @@ By the end of this week, you will be able to:
 - **Demonstrate** that the pipeline is reproducible by re-running it on a clean machine (a freshly-spun-up Codespace, a clean Conda environment, a clean Singularity bind) and confirming byte-identical output for the deterministic rules and within-tolerance output (cosine similarity > 0.99 on the result figures' underlying TSVs, BLEU-style hash agreement on the variant VCFs) for the stochastic rules.
 - **Reason about** the standard reproducibility failure modes: un-pinned tool versions (the canonical mistake; `samtools` without a version constraint resolves to whatever the channel ships today); un-pinned reference data (a "GRCh38" alignment against a regenerated FASTA can have one-base coordinate drift if the reference includes / excludes the EBV decoy); un-pinned random seeds (Flye, IQ-TREE, DESeq2's `set.seed`); un-pinned thread counts (multi-threaded reductions are non-associative; a 4-thread run produces a slightly different VCF from a 16-thread run for some callers); un-pinned filesystem ordering (`os.listdir` is order-dependent across filesystems; sort everything before iterating).
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `CAP 4553` — complete a substantial independent project applying the methods of the course to real data, and report the result. |
+| Industry | Ship an analysis another person can re-run from a clean machine and get the same numbers back. |
+| Beyond the bar | The artefact is deposited under a permanent DOI and carries a `run-info.json` of versions, seeds and accessions — the capstone is marked on its reproducibility profile, not on analytic ambition — `lecture-notes/03-project-tracks-and-deposit.md` |
+
 ## Prerequisites
 
 This week assumes Weeks 1-11 are **done and committed**. Specifically:

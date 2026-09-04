@@ -17,6 +17,14 @@ By the end of this week, you will be able to:
 - **Use** Biopython's `Bio.Align.PairwiseAligner` to verify your NumPy implementation, and explain at least one case where the two implementations should differ at the byte level but agree on score.
 - **Benchmark** your NumPy implementation against Biopython on a pair of ~500 bp sequences and report wall-clock and peak memory in the C10 reproducibility-receipt format.
 
+## Standards this week meets
+
+| Bar | What this week is measured against |
+| --- | --- |
+| University | `CS 4775` — derive, implement and analyse the dynamic-programming algorithms for global and local pairwise sequence alignment, with substitution matrices and gap models. |
+| Industry | Justify the alignment parameters a production tool is run with, rather than accepting whatever its defaults happen to be. |
+| Beyond the bar | Gotoh's three-matrix affine-gap recurrence, plus a wall-clock and peak-memory benchmark of the learner's own implementation against Biopython — `challenges/challenge-01-affine-gap-penalty.md` |
+
 ## Prerequisites
 
 This week assumes Weeks 1 and 2 are **done and committed**. Specifically:
